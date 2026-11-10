@@ -54,16 +54,21 @@ func Split(s string) []string {
 	return out
 }
 
-// Stem removes common English suffixes so "refunds", "refunded" and "refund" meet.
+// Stem reduces a word to a stem shared by its common forms: place, placed and places all become "plac";
+// cancel, cancelled and cancelling become "cancel"; assigned becomes "assign". It is crude, but the same
+// rule runs on the ticket and on the code, so the forms meet.
 func Stem(w string) string {
 	for _, suf := range []string{"ing", "ed", "es", "s"} {
-		if len(w) > len(suf)+3 && strings.HasSuffix(w, suf) {
-			base := strings.TrimSuffix(w, suf)
-			if suf == "es" && !strings.HasSuffix(base, "ss") && !strings.HasSuffix(base, "x") && !strings.HasSuffix(base, "ch") {
-				return base + "e"
-			}
-			return base
+		if len(w) > len(suf)+3 && strings.HasSuffix(w, suf) && !(suf == "s" && strings.HasSuffix(w, "ss")) {
+			w = strings.TrimSuffix(w, suf)
+			break
 		}
+	}
+	if n := len(w); n > 4 && w[n-1] == w[n-2] && !strings.ContainsRune("aeiou", rune(w[n-1])) {
+		w = w[:n-1]
+	}
+	if n := len(w); n > 4 && w[n-1] == 'e' {
+		w = w[:n-1]
 	}
 	return w
 }

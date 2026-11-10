@@ -1,0 +1,19 @@
+{
+  "note": "Ranker settings. Set on the dev tickets only (eval/tasks/dev.json); the held-out tickets were locked before the ranker existed and run once.",
+  "seed_ratio": 0.45,
+  "max_seeds": 8,
+  "text_weight": 0.6,
+  "content_seed_from": 0.6,
+  "content_seed_top": 3,
+  "generated_weight": 0.4,
+  "test_weight": 0.5,
+  "start_repo_bonus": 1.0,
+  "neighbour_bonus": 0.5,
+  "exact_name_boost": 3,
+  "parent_weight": 0.5,
+  "doc_weight": 0.3,
+  "delegate_from": 0.5,
+  "delegate_weight": 0.4,
+  "extra_tie_share": 0.3,
+  "fan_out_free": 3
+}

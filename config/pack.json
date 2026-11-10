@@ -1,0 +1,7 @@
+{
+  "note": "Context pack defaults. A caller may pass its own token budget.",
+  "budget_tokens": 4000,
+  "max_repos": 4,
+  "file_floor": 0.2,
+  "snippet_lines": 30
+}

@@ -39,6 +39,7 @@ type File struct {
 	Path    string   `json:"path"` // relative to the fleet root, e.g. dispatch/internal/eta/eta.go
 	Kind    string   `json:"kind"` // go, proto, doc, config
 	Package string   `json:"package,omitempty"`
+	PkgDoc  string   `json:"pkg_doc,omitempty"`
 	Imports []string `json:"imports,omitempty"`
 	Test    bool     `json:"test,omitempty"`
 	Lines   int      `json:"lines"`
@@ -121,17 +122,17 @@ type ProtoEnum struct {
 
 // Entity is something a change can be about: a contract element, an event, a shared function, a repository.
 type Entity struct {
-	Key   string   `json:"key"`  // e.g. rpc:dispatch.v1.DispatchService/GetEta
-	Kind  string   `json:"kind"` // service, rpc, message, enum, field, event, func, type, repo
-	Name  string   `json:"name"`
-	Owner string   `json:"owner"`           // repository that defines it
-	Words []string `json:"words"`           // terms of the name and its parents, for matching a ticket
-	Doc   string   `json:"doc,omitempty"`   // its comment
-	Defs  []Loc    `json:"defs"`            // where it is defined
-	Refs  []Ref    `json:"refs,omitempty"`  // where it is used, and how
-	Topic  string  `json:"topic,omitempty"`  // for events: the topic string
-	Parent string  `json:"parent,omitempty"` // e.g. the service of an RPC, the message of a field
-	GoName string  `json:"go_name,omitempty"`
+	Key    string   `json:"key"`  // e.g. rpc:dispatch.v1.DispatchService/GetEta
+	Kind   string   `json:"kind"` // service, rpc, message, enum, field, event, func, type, repo
+	Name   string   `json:"name"`
+	Owner  string   `json:"owner"`            // repository that defines it
+	Words  []string `json:"words"`            // terms of the name and its parents, for matching a ticket
+	Doc    string   `json:"doc,omitempty"`    // its comment
+	Defs   []Loc    `json:"defs"`             // where it is defined
+	Refs   []Ref    `json:"refs,omitempty"`   // where it is used, and how
+	Topic  string   `json:"topic,omitempty"`  // for events: the topic string
+	Parent string   `json:"parent,omitempty"` // e.g. the service of an RPC, the message of a field
+	GoName string   `json:"go_name,omitempty"`
 }
 
 // Loc is a place in a file.

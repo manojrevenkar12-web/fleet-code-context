@@ -21,6 +21,9 @@ func ParseGo(path string, src []byte, protoNames map[string]string) (*File, erro
 	}
 	f := &File{Kind: "go", Package: af.Name.Name, Test: strings.HasSuffix(path, "_test.go")}
 	f.Lines = fset.Position(af.End()).Line
+	if af.Doc != nil {
+		f.PkgDoc = strings.TrimSpace(af.Doc.Text())
+	}
 	alias := map[string]string{} // local name -> import path
 	for _, imp := range af.Imports {
 		p, _ := strconv.Unquote(imp.Path.Value)

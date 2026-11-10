@@ -112,6 +112,12 @@ func link(ix *Index) int {
 		if f.Package == "main" {
 			continue
 		}
+		pk := "pkg:" + importPath
+		pe := add(&Entity{Key: pk, Kind: "package", Name: path.Base(importPath), Owner: f.Repo, Words: words.Split(path.Base(importPath))})
+		if f.PkgDoc != "" && pe.Doc == "" {
+			pe.Doc = f.PkgDoc
+		}
+		pe.Defs = append(pe.Defs, Loc{p, Span{1, f.Lines}})
 		for _, d := range f.Decls {
 			if d.Name == "" || !isExported(d.Name) || d.Kind == "method" {
 				continue
@@ -151,6 +157,7 @@ func link(ix *Index) int {
 			}
 		}
 		usedTypes := map[int][]string{} // line -> proto types used there, to recognise handlers
+		pkgSeen := map[string]bool{}
 		for _, u := range f.Uses {
 			if pp := imported[u.Pkg]; pp != nil {
 				if e := pp.types[u.Name]; e != nil {
@@ -162,6 +169,10 @@ func link(ix *Index) int {
 				continue
 			}
 			if e := ent["go:"+u.Pkg+"."+u.Name]; e != nil {
+				ref(e, f, u.Line, "uses")
+			}
+			if e := ent["pkg:"+u.Pkg]; e != nil && !pkgSeen[u.Pkg] {
+				pkgSeen[u.Pkg] = true
 				ref(e, f, u.Line, "uses")
 			}
 		}
