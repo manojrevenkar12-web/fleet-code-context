@@ -1,0 +1,5 @@
+name: notifications
+kind: service
+team: customer-comms
+tier: 2
+slack: "#customer-comms"

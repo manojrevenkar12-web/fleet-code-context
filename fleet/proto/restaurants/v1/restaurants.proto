@@ -1,0 +1,15 @@
+syntax = "proto3";
+package restaurants.v1;
+option go_package = "fleet.example/proto/restaurants/v1;restaurantsv1";
+
+// RestaurantService serves partner restaurants and their menus.
+service RestaurantService {
+  rpc GetRestaurant(GetRestaurantRequest) returns (Restaurant);
+  rpc GetMenu(GetMenuRequest) returns (Menu);
+}
+
+message Restaurant { string id = 1; string name = 2; bool open = 3; string tablet_id = 4; }
+message MenuItem { string id = 1; string name = 2; int64 price_pence = 3; }
+message Menu { string restaurant_id = 1; repeated MenuItem items = 2; }
+message GetRestaurantRequest { string id = 1; }
+message GetMenuRequest { string restaurant_id = 1; }

@@ -1,0 +1,12 @@
+syntax = "proto3";
+package pricing.v1;
+option go_package = "fleet.example/proto/pricing/v1;pricingv1";
+
+// PricingService quotes the price of a basket.
+service PricingService {
+  rpc Quote(QuoteRequest) returns (PriceQuote);
+}
+
+message QuoteItem { string menu_item_id = 1; int32 quantity = 2; int64 unit_price_pence = 3; }
+message QuoteRequest { string restaurant_id = 1; repeated QuoteItem items = 2; }
+message PriceQuote { int64 subtotal_pence = 1; int64 delivery_fee_pence = 2; int64 total_pence = 3; }

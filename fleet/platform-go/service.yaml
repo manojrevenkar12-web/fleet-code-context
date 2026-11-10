@@ -1,0 +1,5 @@
+name: platform-go
+kind: library
+team: platform
+tier: 0
+slack: "#platform-go"

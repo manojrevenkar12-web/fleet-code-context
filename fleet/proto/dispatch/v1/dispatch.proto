@@ -1,0 +1,14 @@
+syntax = "proto3";
+package dispatch.v1;
+option go_package = "fleet.example/proto/dispatch/v1;dispatchv1";
+
+// DispatchService matches orders to riders.
+service DispatchService {
+  rpc AssignRider(AssignRiderRequest) returns (Assignment);
+  rpc GetEta(GetEtaRequest) returns (Eta);
+}
+
+message AssignRiderRequest { string order_id = 1; string restaurant_id = 2; }
+message Assignment { string order_id = 1; string rider_id = 2; int32 eta_seconds = 3; }
+message GetEtaRequest { string order_id = 1; }
+message Eta { string order_id = 1; int32 eta_seconds = 2; }

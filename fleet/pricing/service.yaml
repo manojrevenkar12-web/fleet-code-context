@@ -1,0 +1,5 @@
+name: pricing
+kind: service
+team: pricing
+tier: 1
+slack: "#pricing"

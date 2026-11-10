@@ -1,0 +1,12 @@
+{
+  "note": "Stale instructions planted in the fixture fleet's AGENTS.md files. Only the evaluation reads this file.",
+  "stale": [
+    {"repo": "orders", "contains": "internal/handlers/", "kind": "renamed directory"},
+    {"repo": "orders", "contains": "make lint", "kind": "make target removed"},
+    {"repo": "orders", "contains": "pricingclient.Quote", "kind": "client package replaced"},
+    {"repo": "orders", "contains": "float64 pounds", "kind": "unit changed"},
+    {"repo": "dispatch", "contains": "ETAs are in minutes", "kind": "unit changed"},
+    {"repo": "pricing", "contains": "config/fees.yaml", "kind": "config file removed"},
+    {"repo": "notifications", "contains": "internal/templates", "kind": "package removed"}
+  ]
+}

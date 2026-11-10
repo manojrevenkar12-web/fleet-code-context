@@ -1,0 +1,12 @@
+syntax = "proto3";
+package events.v1;
+option go_package = "fleet.example/proto/events/v1;eventsv1";
+
+// Published by orders when a customer places an order.
+message OrderPlaced { string order_id = 1; string restaurant_id = 2; string customer_id = 3; int64 total_pence = 4; int64 placed_at_unix = 5; }
+// Published by orders when an order is cancelled.
+message OrderCancelled { string order_id = 1; string reason = 2; }
+// Published by dispatch when a rider takes an order.
+message RiderAssigned { string order_id = 1; string rider_id = 2; int32 eta_seconds = 3; }
+// Published by payments when money is captured.
+message PaymentCaptured { string order_id = 1; int64 amount_pence = 2; }

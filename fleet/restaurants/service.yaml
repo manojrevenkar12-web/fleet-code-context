@@ -1,0 +1,5 @@
+name: restaurants
+kind: service
+team: partners
+tier: 1
+slack: "#partners"

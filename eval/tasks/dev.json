@@ -1,0 +1,248 @@
+{
+ "split": "dev",
+ "tasks": [
+  {
+   "id": "D01",
+   "start_repo": "orders",
+   "ticket": "Customers want to tip their rider. Add a tip to the order when it is placed and show the tip to the rider when they are assigned.",
+   "required_files": [
+    "proto/orders/v1/orders.proto",
+    "proto/events/v1/events.proto",
+    "orders/internal/server/server.go",
+    "dispatch/internal/assign/assign.go",
+    "dispatch/internal/consumer/order_placed.go"
+   ],
+   "conventions": [
+    "money",
+    "proto-fields",
+    "proto-regen"
+   ],
+   "owners": [
+    "orders",
+    "logistics",
+    "platform-contracts"
+   ]
+  },
+  {
+   "id": "D02",
+   "start_repo": "notifications",
+   "ticket": "The push that tells a customer their rider is on the way says 'arriving in 0 minutes' for short trips. Round the arrival time up.",
+   "required_files": [
+    "notifications/internal/consumer/rider_assigned.go",
+    "proto/events/v1/events.proto",
+    "dispatch/internal/eta/eta.go"
+   ],
+   "conventions": [],
+   "owners": [
+    "customer-comms"
+   ]
+  },
+  {
+   "id": "D03",
+   "start_repo": "payments",
+   "ticket": "Cancelling an order that was already cancelled refunds the customer a second time. Make the refund happen once.",
+   "required_files": [
+    "payments/internal/server/server.go",
+    "payments/internal/consumer/order_cancelled.go",
+    "orders/internal/server/server.go"
+   ],
+   "conventions": [
+    "refunds"
+   ],
+   "owners": [
+    "payments",
+    "orders"
+   ]
+  },
+  {
+   "id": "D04",
+   "start_repo": "dispatch",
+   "ticket": "Rename the GetEta RPC of the dispatch service to EstimateArrival.",
+   "required_files": [
+    "proto/dispatch/v1/dispatch.proto",
+    "dispatch/internal/assign/assign.go",
+    "orders/internal/server/track.go"
+   ],
+   "conventions": [
+    "proto-regen"
+   ],
+   "owners": [
+    "logistics",
+    "orders",
+    "platform-contracts"
+   ]
+  },
+  {
+   "id": "D05",
+   "start_repo": "pricing",
+   "ticket": "Add a service fee, configured in basis points, to the price quote and include it in the order total that the customer is charged.",
+   "required_files": [
+    "proto/pricing/v1/pricing.proto",
+    "pricing/internal/quote/quote.go",
+    "orders/internal/server/server.go",
+    "platform-go/money/money.go"
+   ],
+   "conventions": [
+    "money",
+    "proto-fields",
+    "proto-regen"
+   ],
+   "owners": [
+    "pricing",
+    "orders",
+    "platform-contracts"
+   ]
+  },
+  {
+   "id": "D06",
+   "start_repo": "restaurants",
+   "ticket": "Kitchens should get a tablet alert when an order is cancelled so they stop cooking it.",
+   "required_files": [
+    "restaurants/internal/consumer/order_placed.go",
+    "proto/events/v1/events.proto",
+    "orders/internal/server/server.go"
+   ],
+   "conventions": [
+    "events",
+    "logging"
+   ],
+   "owners": [
+    "partners"
+   ]
+  },
+  {
+   "id": "D07",
+   "start_repo": "riders",
+   "ticket": "Rider location updates are printed to stdout. Log them properly instead.",
+   "required_files": [
+    "riders/internal/location/location.go",
+    "platform-go/log/log.go"
+   ],
+   "conventions": [
+    "logging"
+   ],
+   "owners": [
+    "riders"
+   ]
+  },
+  {
+   "id": "D08",
+   "start_repo": "notifications",
+   "ticket": "Send the customer's receipt only once the payment has been captured, not when the order is placed.",
+   "required_files": [
+    "notifications/internal/consumer/order_placed.go",
+    "proto/events/v1/events.proto",
+    "payments/internal/server/server.go"
+   ],
+   "conventions": [
+    "events",
+    "format"
+   ],
+   "owners": [
+    "customer-comms",
+    "payments"
+   ]
+  },
+  {
+   "id": "D09",
+   "start_repo": "orders",
+   "ticket": "We want to remove the delivery_fee_pence field from the Order message. Which services read it and which teams need to review?",
+   "required_files": [
+    "proto/orders/v1/orders.proto",
+    "orders/internal/store/store.go",
+    "orders/internal/server/server.go"
+   ],
+   "conventions": [
+    "proto-fields"
+   ],
+   "owners": [
+    "orders",
+    "platform-contracts"
+   ]
+  },
+  {
+   "id": "D10",
+   "start_repo": "dispatch",
+   "ticket": "Add e-bikes as a rider vehicle with their own speed in the arrival estimate.",
+   "required_files": [
+    "proto/riders/v1/riders.proto",
+    "dispatch/internal/eta/eta.go"
+   ],
+   "conventions": [
+    "proto-fields",
+    "proto-regen"
+   ],
+   "owners": [
+    "logistics",
+    "riders",
+    "platform-contracts"
+   ]
+  },
+  {
+   "id": "D11",
+   "start_repo": "orders",
+   "ticket": "Placing an order with a menu item the restaurant no longer sells should be rejected.",
+   "required_files": [
+    "orders/internal/server/server.go",
+    "proto/restaurants/v1/restaurants.proto",
+    "restaurants/internal/server/server.go",
+    "restaurants/internal/menu/menu.go"
+   ],
+   "conventions": [],
+   "owners": [
+    "orders",
+    "partners"
+   ]
+  },
+  {
+   "id": "D12",
+   "start_repo": "notifications",
+   "ticket": "Receipts show a delivery fee of \u00a33.5 instead of \u00a33.50.",
+   "required_files": [
+    "platform-go/money/money.go",
+    "notifications/internal/consumer/order_placed.go"
+   ],
+   "conventions": [
+    "format",
+    "money"
+   ],
+   "owners": [
+    "platform",
+    "customer-comms"
+   ]
+  },
+  {
+   "id": "D13",
+   "start_repo": "dispatch",
+   "ticket": "Do not assign riders whose last location update is more than five minutes old.",
+   "required_files": [
+    "dispatch/internal/assign/assign.go",
+    "proto/riders/v1/riders.proto",
+    "riders/internal/location/location.go"
+   ],
+   "conventions": [],
+   "owners": [
+    "logistics",
+    "riders"
+   ]
+  },
+  {
+   "id": "D14",
+   "start_repo": "orders",
+   "ticket": "Clients retry PlaceOrder on timeouts and sometimes create the same order twice. Add an idempotency key.",
+   "required_files": [
+    "proto/orders/v1/orders.proto",
+    "orders/internal/server/server.go",
+    "orders/internal/store/store.go"
+   ],
+   "conventions": [
+    "proto-fields",
+    "proto-regen"
+   ],
+   "owners": [
+    "orders",
+    "platform-contracts"
+   ]
+  }
+ ]
+}

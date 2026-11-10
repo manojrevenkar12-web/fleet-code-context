@@ -1,0 +1,23 @@
+syntax = "proto3";
+package payments.v1;
+option go_package = "fleet.example/proto/payments/v1;paymentsv1";
+
+// PaymentService authorises, captures and refunds card payments.
+service PaymentService {
+  rpc Authorize(AuthorizeRequest) returns (Payment);
+  rpc Capture(CaptureRequest) returns (Payment);
+  rpc Refund(RefundRequest) returns (Payment);
+}
+
+enum PaymentState {
+  PAYMENT_STATE_UNSPECIFIED = 0;
+  PAYMENT_STATE_AUTHORIZED = 1;
+  PAYMENT_STATE_CAPTURED = 2;
+  PAYMENT_STATE_REFUNDED = 3;
+  PAYMENT_STATE_DECLINED = 4;
+}
+
+message Payment { string id = 1; string order_id = 2; int64 amount_pence = 3; PaymentState state = 4; }
+message AuthorizeRequest { string order_id = 1; int64 amount_pence = 2; string payment_method_id = 3; }
+message CaptureRequest { string payment_id = 1; }
+message RefundRequest { string order_id = 1; string reason = 2; }

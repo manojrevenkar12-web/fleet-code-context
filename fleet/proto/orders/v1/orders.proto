@@ -1,0 +1,46 @@
+syntax = "proto3";
+package orders.v1;
+option go_package = "fleet.example/proto/orders/v1;ordersv1";
+
+// OrderService owns the lifecycle of a customer order.
+service OrderService {
+  rpc GetOrder(GetOrderRequest) returns (Order);
+  rpc PlaceOrder(PlaceOrderRequest) returns (Order);
+  rpc CancelOrder(CancelOrderRequest) returns (Order);
+  rpc TrackOrder(TrackOrderRequest) returns (Tracking);
+}
+
+enum OrderStatus {
+  ORDER_STATUS_UNSPECIFIED = 0;
+  ORDER_STATUS_PLACED = 1;
+  ORDER_STATUS_ACCEPTED = 2;
+  ORDER_STATUS_DELIVERED = 3;
+  ORDER_STATUS_CANCELLED = 4;
+}
+
+message LineItem {
+  string menu_item_id = 1;
+  int32 quantity = 2;
+  int64 unit_price_pence = 3;
+}
+
+message Order {
+  string id = 1;
+  string restaurant_id = 2;
+  string customer_id = 3;
+  int64 total_pence = 4;
+  OrderStatus status = 5;
+  repeated LineItem items = 6;
+  int64 delivery_fee_pence = 7;
+}
+
+message GetOrderRequest { string id = 1; }
+message PlaceOrderRequest {
+  string restaurant_id = 1;
+  string customer_id = 2;
+  repeated LineItem items = 3;
+  string payment_method_id = 4;
+}
+message CancelOrderRequest { string id = 1; string reason = 2; }
+message TrackOrderRequest { string id = 1; }
+message Tracking { string order_id = 1; OrderStatus status = 2; int32 eta_seconds = 3; }

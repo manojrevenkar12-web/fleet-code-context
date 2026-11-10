@@ -1,0 +1,183 @@
+{
+ "split": "heldout",
+ "tasks": [
+  {
+   "id": "H01",
+   "start_repo": "payments",
+   "ticket": "When a card is declined while placing an order, tell the customer straight away with a push message.",
+   "required_files": [
+    "payments/internal/server/server.go",
+    "orders/internal/server/server.go",
+    "notifications/internal/push/push.go"
+   ],
+   "conventions": [
+    "events"
+   ],
+   "owners": [
+    "payments",
+    "orders",
+    "customer-comms"
+   ]
+  },
+  {
+   "id": "H02",
+   "start_repo": "notifications",
+   "ticket": "The 'rider on the way' push should greet the customer with the rider's first name.",
+   "required_files": [
+    "notifications/internal/consumer/rider_assigned.go",
+    "proto/events/v1/events.proto",
+    "dispatch/internal/assign/assign.go",
+    "proto/riders/v1/riders.proto"
+   ],
+   "conventions": [
+    "proto-fields",
+    "proto-regen"
+   ],
+   "owners": [
+    "customer-comms",
+    "logistics",
+    "platform-contracts"
+   ]
+  },
+  {
+   "id": "H03",
+   "start_repo": "pricing",
+   "ticket": "Halve the delivery fee for baskets over forty pounds.",
+   "required_files": [
+    "pricing/internal/quote/quote.go",
+    "platform-go/money/money.go"
+   ],
+   "conventions": [
+    "money"
+   ],
+   "owners": [
+    "pricing"
+   ]
+  },
+  {
+   "id": "H04",
+   "start_repo": "orders",
+   "ticket": "Add a PICKED_UP status that is set when the rider collects the food from the restaurant.",
+   "required_files": [
+    "proto/orders/v1/orders.proto",
+    "orders/internal/server/server.go",
+    "orders/internal/store/store.go"
+   ],
+   "conventions": [
+    "proto-fields",
+    "proto-regen"
+   ],
+   "owners": [
+    "orders",
+    "platform-contracts"
+   ]
+  },
+  {
+   "id": "H05",
+   "start_repo": "restaurants",
+   "ticket": "The kitchen tablet alert should show the order total in pounds.",
+   "required_files": [
+    "restaurants/internal/consumer/order_placed.go",
+    "platform-go/money/money.go",
+    "proto/events/v1/events.proto"
+   ],
+   "conventions": [
+    "format",
+    "money"
+   ],
+   "owners": [
+    "partners"
+   ]
+  },
+  {
+   "id": "H06",
+   "start_repo": "payments",
+   "ticket": "Support partial refunds when only some items of an order are cancelled.",
+   "required_files": [
+    "proto/payments/v1/payments.proto",
+    "payments/internal/server/server.go",
+    "orders/internal/server/server.go",
+    "payments/internal/consumer/order_cancelled.go"
+   ],
+   "conventions": [
+    "money",
+    "refunds",
+    "proto-fields"
+   ],
+   "owners": [
+    "payments",
+    "orders",
+    "platform-contracts"
+   ]
+  },
+  {
+   "id": "H07",
+   "start_repo": "orders",
+   "ticket": "The orders service writes customer IDs into its logs. Stop logging personal data.",
+   "required_files": [
+    "orders/internal/server/server.go",
+    "platform-go/log/log.go"
+   ],
+   "conventions": [
+    "logging"
+   ],
+   "owners": [
+    "orders"
+   ]
+  },
+  {
+   "id": "H08",
+   "start_repo": "orders",
+   "ticket": "Tracking an order shows an old arrival time after dispatch gives the order to a different rider.",
+   "required_files": [
+    "orders/internal/server/track.go",
+    "dispatch/internal/assign/assign.go",
+    "proto/dispatch/v1/dispatch.proto"
+   ],
+   "conventions": [],
+   "owners": [
+    "orders",
+    "logistics"
+   ]
+  },
+  {
+   "id": "H09",
+   "start_repo": "payments",
+   "ticket": "Let customers pay with Apple Pay.",
+   "required_files": [
+    "proto/payments/v1/payments.proto",
+    "payments/internal/server/server.go",
+    "orders/internal/server/server.go",
+    "proto/orders/v1/orders.proto"
+   ],
+   "conventions": [
+    "proto-fields",
+    "proto-regen"
+   ],
+   "owners": [
+    "payments",
+    "orders",
+    "platform-contracts"
+   ]
+  },
+  {
+   "id": "H10",
+   "start_repo": "dispatch",
+   "ticket": "Assigning a rider is slow because candidate riders are fetched one at a time. Fetch them in one call.",
+   "required_files": [
+    "dispatch/internal/assign/assign.go",
+    "proto/riders/v1/riders.proto",
+    "riders/internal/server/server.go"
+   ],
+   "conventions": [
+    "proto-fields",
+    "proto-regen"
+   ],
+   "owners": [
+    "logistics",
+    "riders",
+    "platform-contracts"
+   ]
+  }
+ ]
+}

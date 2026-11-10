@@ -1,0 +1,31 @@
+syntax = "proto3";
+package riders.v1;
+option go_package = "fleet.example/proto/riders/v1;ridersv1";
+
+// RiderService knows every rider and where they are.
+service RiderService {
+  rpc GetRider(GetRiderRequest) returns (Rider);
+  rpc ListAvailableRiders(ListAvailableRidersRequest) returns (RiderList);
+  rpc UpdateLocation(UpdateLocationRequest) returns (Rider);
+}
+
+enum Vehicle {
+  VEHICLE_UNSPECIFIED = 0;
+  VEHICLE_BICYCLE = 1;
+  VEHICLE_SCOOTER = 2;
+  VEHICLE_CAR = 3;
+}
+
+message Rider {
+  string id = 1;
+  string name = 2;
+  Vehicle vehicle = 3;
+  double lat = 4;
+  double lng = 5;
+  int64 location_updated_at_unix = 6;
+}
+
+message GetRiderRequest { string id = 1; }
+message ListAvailableRidersRequest { double lat = 1; double lng = 2; }
+message RiderList { repeated string rider_ids = 1; }
+message UpdateLocationRequest { string id = 1; double lat = 2; double lng = 3; }

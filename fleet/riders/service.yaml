@@ -1,0 +1,5 @@
+name: riders
+kind: service
+team: riders
+tier: 1
+slack: "#riders"

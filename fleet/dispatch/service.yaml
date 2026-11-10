@@ -1,0 +1,5 @@
+name: dispatch
+kind: service
+team: logistics
+tier: 1
+slack: "#logistics"

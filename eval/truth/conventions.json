@@ -1,0 +1,13 @@
+{
+  "note": "Which instruction sentence each convention id stands for. A context source covers a convention when its text contains the sentence.",
+  "conventions": {
+    "money": "Money is `money.Pence`",
+    "logging": "Log with `fleet.example/platform-go/log`",
+    "events": "Publish and subscribe only through `bus.Bus`",
+    "format": "Format amounts for people with `money.Format`",
+    "proto-fields": "Never renumber or reuse a field number",
+    "proto-regen": "Regenerate with `make generate`",
+    "proto-events": "Every event has a topic constant",
+    "refunds": "Refunds must be idempotent per order"
+  }
+}
