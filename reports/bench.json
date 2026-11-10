@@ -1,0 +1,66 @@
+{
+ "cpus": 2,
+ "go": "go1.24.7",
+ "rows": [
+  {
+   "repos": 9,
+   "files": 90,
+   "entities": 205,
+   "cross_repo_refs": 669,
+   "full_index_seconds": 0.01,
+   "one_repo_changed_seconds": 0,
+   "heap_mb": 0.5,
+   "snapshot_mb": 0.2,
+   "context_pack_p50_ms": 0.6,
+   "context_pack_p95_ms": 1.6,
+   "mcp_call_p50_ms": 1.5,
+   "mcp_call_p95_ms": 2.1,
+   "check_instructions_seconds": 0
+  },
+  {
+   "repos": 309,
+   "files": 3209,
+   "entities": 11767,
+   "cross_repo_refs": 6123,
+   "full_index_seconds": 0.21,
+   "one_repo_changed_seconds": 0.09,
+   "heap_mb": 11.9,
+   "snapshot_mb": 8.1,
+   "context_pack_p50_ms": 8,
+   "context_pack_p95_ms": 15.4,
+   "mcp_call_p50_ms": 7.9,
+   "mcp_call_p95_ms": 15.7,
+   "check_instructions_seconds": 0.02
+  },
+  {
+   "repos": 1009,
+   "files": 10511,
+   "entities": 38668,
+   "cross_repo_refs": 19079,
+   "full_index_seconds": 0.87,
+   "one_repo_changed_seconds": 0.4,
+   "heap_mb": 38.9,
+   "snapshot_mb": 26.8,
+   "context_pack_p50_ms": 40.2,
+   "context_pack_p95_ms": 64.6,
+   "mcp_call_p50_ms": 43.4,
+   "mcp_call_p95_ms": 70.2,
+   "check_instructions_seconds": 0.04
+  },
+  {
+   "repos": 2009,
+   "files": 20912,
+   "entities": 77134,
+   "cross_repo_refs": 37528,
+   "full_index_seconds": 1.56,
+   "one_repo_changed_seconds": 1.38,
+   "heap_mb": 77.4,
+   "snapshot_mb": 54,
+   "context_pack_p50_ms": 89.3,
+   "context_pack_p95_ms": 167,
+   "mcp_call_p50_ms": 88.6,
+   "mcp_call_p95_ms": 152.9,
+   "check_instructions_seconds": 0.11
+  }
+ ]
+}

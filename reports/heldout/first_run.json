@@ -1,0 +1,4531 @@
+[
+ {
+  "name": "fixture",
+  "repos": 9,
+  "files": 90,
+  "entities": 205,
+  "cross_repo_refs": 669,
+  "summary": [
+   {
+    "source": "agents-md",
+    "budget": 2000,
+    "tasks": 10,
+    "file_recall": 0,
+    "tasks_with_every_file": 0,
+    "owner_recall": 0,
+    "convention_recall": 0.133,
+    "stale_as_fact": 15,
+    "mean_tokens": 78.3,
+    "cross_repo_files_needed": 19,
+    "cross_repo_files_found": 0
+   },
+   {
+    "source": "grep-repo",
+    "budget": 2000,
+    "tasks": 10,
+    "file_recall": 0.4,
+    "tasks_with_every_file": 0,
+    "owner_recall": 0,
+    "convention_recall": 0.133,
+    "stale_as_fact": 15,
+    "mean_tokens": 818.9,
+    "cross_repo_files_needed": 19,
+    "cross_repo_files_found": 0
+   },
+   {
+    "source": "grep-fleet",
+    "budget": 2000,
+    "tasks": 10,
+    "file_recall": 0.642,
+    "tasks_with_every_file": 3,
+    "owner_recall": 0,
+    "convention_recall": 0.133,
+    "stale_as_fact": 15,
+    "mean_tokens": 1972.7,
+    "cross_repo_files_needed": 19,
+    "cross_repo_files_found": 9
+   },
+   {
+    "source": "fleet-code-context",
+    "budget": 2000,
+    "tasks": 10,
+    "file_recall": 0.742,
+    "tasks_with_every_file": 5,
+    "owner_recall": 0.9,
+    "convention_recall": 0.9,
+    "stale_as_fact": 0,
+    "mean_tokens": 1629.3,
+    "cross_repo_files_needed": 19,
+    "cross_repo_files_found": 12
+   },
+   {
+    "source": "agents-md",
+    "budget": 4000,
+    "tasks": 10,
+    "file_recall": 0,
+    "tasks_with_every_file": 0,
+    "owner_recall": 0,
+    "convention_recall": 0.133,
+    "stale_as_fact": 15,
+    "mean_tokens": 78.3,
+    "cross_repo_files_needed": 19,
+    "cross_repo_files_found": 0
+   },
+   {
+    "source": "grep-repo",
+    "budget": 4000,
+    "tasks": 10,
+    "file_recall": 0.4,
+    "tasks_with_every_file": 0,
+    "owner_recall": 0,
+    "convention_recall": 0.133,
+    "stale_as_fact": 15,
+    "mean_tokens": 818.9,
+    "cross_repo_files_needed": 19,
+    "cross_repo_files_found": 0
+   },
+   {
+    "source": "grep-fleet",
+    "budget": 4000,
+    "tasks": 10,
+    "file_recall": 0.95,
+    "tasks_with_every_file": 9,
+    "owner_recall": 0,
+    "convention_recall": 0.133,
+    "stale_as_fact": 15,
+    "mean_tokens": 3707.9,
+    "cross_repo_files_needed": 19,
+    "cross_repo_files_found": 17
+   },
+   {
+    "source": "fleet-code-context",
+    "budget": 4000,
+    "tasks": 10,
+    "file_recall": 0.8,
+    "tasks_with_every_file": 7,
+    "owner_recall": 0.9,
+    "convention_recall": 0.9,
+    "stale_as_fact": 0,
+    "mean_tokens": 2163.9,
+    "cross_repo_files_needed": 19,
+    "cross_repo_files_found": 13
+   },
+   {
+    "source": "agents-md",
+    "budget": 8000,
+    "tasks": 10,
+    "file_recall": 0,
+    "tasks_with_every_file": 0,
+    "owner_recall": 0,
+    "convention_recall": 0.133,
+    "stale_as_fact": 15,
+    "mean_tokens": 78.3,
+    "cross_repo_files_needed": 19,
+    "cross_repo_files_found": 0
+   },
+   {
+    "source": "grep-repo",
+    "budget": 8000,
+    "tasks": 10,
+    "file_recall": 0.4,
+    "tasks_with_every_file": 0,
+    "owner_recall": 0,
+    "convention_recall": 0.133,
+    "stale_as_fact": 15,
+    "mean_tokens": 818.9,
+    "cross_repo_files_needed": 19,
+    "cross_repo_files_found": 0
+   },
+   {
+    "source": "grep-fleet",
+    "budget": 8000,
+    "tasks": 10,
+    "file_recall": 1,
+    "tasks_with_every_file": 10,
+    "owner_recall": 0,
+    "convention_recall": 0.133,
+    "stale_as_fact": 15,
+    "mean_tokens": 5385.5,
+    "cross_repo_files_needed": 19,
+    "cross_repo_files_found": 19
+   },
+   {
+    "source": "fleet-code-context",
+    "budget": 8000,
+    "tasks": 10,
+    "file_recall": 0.8,
+    "tasks_with_every_file": 7,
+    "owner_recall": 0.9,
+    "convention_recall": 0.9,
+    "stale_as_fact": 0,
+    "mean_tokens": 2163.9,
+    "cross_repo_files_needed": 19,
+    "cross_repo_files_found": 13
+   }
+  ],
+  "outcomes": [
+   {
+    "task": "H01",
+    "source": "agents-md",
+    "budget": 2000,
+    "tokens": 76,
+    "files_found": 0,
+    "files_needed": 3,
+    "missing": [
+     "payments/internal/server/server.go",
+     "orders/internal/server/server.go",
+     "notifications/internal/push/push.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 1,
+    "stale_as_fact": 0,
+    "ms": 0
+   },
+   {
+    "task": "H01",
+    "source": "grep-repo",
+    "budget": 2000,
+    "tokens": 743,
+    "files_found": 1,
+    "files_needed": 3,
+    "missing": [
+     "orders/internal/server/server.go",
+     "notifications/internal/push/push.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 1,
+    "stale_as_fact": 0,
+    "ms": 0.117
+   },
+   {
+    "task": "H01",
+    "source": "grep-fleet",
+    "budget": 2000,
+    "tokens": 1958,
+    "files_found": 2,
+    "files_needed": 3,
+    "missing": [
+     "orders/internal/server/server.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 1,
+    "stale_as_fact": 0,
+    "ms": 1.268
+   },
+   {
+    "task": "H01",
+    "source": "fleet-code-context",
+    "budget": 2000,
+    "tokens": 2000,
+    "files_found": 2,
+    "files_needed": 3,
+    "missing": [
+     "orders/internal/server/server.go"
+    ],
+    "owners_found": 3,
+    "owners_needed": 3,
+    "conventions_found": 1,
+    "conventions_needed": 1,
+    "stale_as_fact": 0,
+    "ms": 0.794
+   },
+   {
+    "task": "H01",
+    "source": "agents-md",
+    "budget": 4000,
+    "tokens": 76,
+    "files_found": 0,
+    "files_needed": 3,
+    "missing": [
+     "payments/internal/server/server.go",
+     "orders/internal/server/server.go",
+     "notifications/internal/push/push.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 1,
+    "stale_as_fact": 0,
+    "ms": 0
+   },
+   {
+    "task": "H01",
+    "source": "grep-repo",
+    "budget": 4000,
+    "tokens": 743,
+    "files_found": 1,
+    "files_needed": 3,
+    "missing": [
+     "orders/internal/server/server.go",
+     "notifications/internal/push/push.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 1,
+    "stale_as_fact": 0,
+    "ms": 0.109
+   },
+   {
+    "task": "H01",
+    "source": "grep-fleet",
+    "budget": 4000,
+    "tokens": 3986,
+    "files_found": 3,
+    "files_needed": 3,
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 1,
+    "stale_as_fact": 0,
+    "ms": 1.264
+   },
+   {
+    "task": "H01",
+    "source": "fleet-code-context",
+    "budget": 4000,
+    "tokens": 3903,
+    "files_found": 3,
+    "files_needed": 3,
+    "owners_found": 3,
+    "owners_needed": 3,
+    "conventions_found": 1,
+    "conventions_needed": 1,
+    "stale_as_fact": 0,
+    "ms": 0.743
+   },
+   {
+    "task": "H01",
+    "source": "agents-md",
+    "budget": 8000,
+    "tokens": 76,
+    "files_found": 0,
+    "files_needed": 3,
+    "missing": [
+     "payments/internal/server/server.go",
+     "orders/internal/server/server.go",
+     "notifications/internal/push/push.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 1,
+    "stale_as_fact": 0,
+    "ms": 0.001
+   },
+   {
+    "task": "H01",
+    "source": "grep-repo",
+    "budget": 8000,
+    "tokens": 743,
+    "files_found": 1,
+    "files_needed": 3,
+    "missing": [
+     "orders/internal/server/server.go",
+     "notifications/internal/push/push.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 1,
+    "stale_as_fact": 0,
+    "ms": 0.109
+   },
+   {
+    "task": "H01",
+    "source": "grep-fleet",
+    "budget": 8000,
+    "tokens": 5998,
+    "files_found": 3,
+    "files_needed": 3,
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 1,
+    "stale_as_fact": 0,
+    "ms": 1.24
+   },
+   {
+    "task": "H01",
+    "source": "fleet-code-context",
+    "budget": 8000,
+    "tokens": 3903,
+    "files_found": 3,
+    "files_needed": 3,
+    "owners_found": 3,
+    "owners_needed": 3,
+    "conventions_found": 1,
+    "conventions_needed": 1,
+    "stale_as_fact": 0,
+    "ms": 0.704
+   },
+   {
+    "task": "H02",
+    "source": "agents-md",
+    "budget": 2000,
+    "tokens": 64,
+    "files_found": 0,
+    "files_needed": 4,
+    "missing": [
+     "notifications/internal/consumer/rider_assigned.go",
+     "proto/events/v1/events.proto",
+     "dispatch/internal/assign/assign.go",
+     "proto/riders/v1/riders.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 1,
+    "ms": 0
+   },
+   {
+    "task": "H02",
+    "source": "grep-repo",
+    "budget": 2000,
+    "tokens": 539,
+    "files_found": 1,
+    "files_needed": 4,
+    "missing": [
+     "proto/events/v1/events.proto",
+     "dispatch/internal/assign/assign.go",
+     "proto/riders/v1/riders.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 1,
+    "ms": 0.08
+   },
+   {
+    "task": "H02",
+    "source": "grep-fleet",
+    "budget": 2000,
+    "tokens": 1913,
+    "files_found": 2,
+    "files_needed": 4,
+    "missing": [
+     "proto/events/v1/events.proto",
+     "dispatch/internal/assign/assign.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 1,
+    "ms": 0.795
+   },
+   {
+    "task": "H02",
+    "source": "fleet-code-context",
+    "budget": 2000,
+    "tokens": 1622,
+    "files_found": 4,
+    "files_needed": 4,
+    "owners_found": 3,
+    "owners_needed": 3,
+    "conventions_found": 2,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 0.356
+   },
+   {
+    "task": "H02",
+    "source": "agents-md",
+    "budget": 4000,
+    "tokens": 64,
+    "files_found": 0,
+    "files_needed": 4,
+    "missing": [
+     "notifications/internal/consumer/rider_assigned.go",
+     "proto/events/v1/events.proto",
+     "dispatch/internal/assign/assign.go",
+     "proto/riders/v1/riders.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 1,
+    "ms": 0
+   },
+   {
+    "task": "H02",
+    "source": "grep-repo",
+    "budget": 4000,
+    "tokens": 539,
+    "files_found": 1,
+    "files_needed": 4,
+    "missing": [
+     "proto/events/v1/events.proto",
+     "dispatch/internal/assign/assign.go",
+     "proto/riders/v1/riders.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 1,
+    "ms": 0.08
+   },
+   {
+    "task": "H02",
+    "source": "grep-fleet",
+    "budget": 4000,
+    "tokens": 3668,
+    "files_found": 4,
+    "files_needed": 4,
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 1,
+    "ms": 0.845
+   },
+   {
+    "task": "H02",
+    "source": "fleet-code-context",
+    "budget": 4000,
+    "tokens": 1622,
+    "files_found": 4,
+    "files_needed": 4,
+    "owners_found": 3,
+    "owners_needed": 3,
+    "conventions_found": 2,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 0.372
+   },
+   {
+    "task": "H02",
+    "source": "agents-md",
+    "budget": 8000,
+    "tokens": 64,
+    "files_found": 0,
+    "files_needed": 4,
+    "missing": [
+     "notifications/internal/consumer/rider_assigned.go",
+     "proto/events/v1/events.proto",
+     "dispatch/internal/assign/assign.go",
+     "proto/riders/v1/riders.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 1,
+    "ms": 0
+   },
+   {
+    "task": "H02",
+    "source": "grep-repo",
+    "budget": 8000,
+    "tokens": 539,
+    "files_found": 1,
+    "files_needed": 4,
+    "missing": [
+     "proto/events/v1/events.proto",
+     "dispatch/internal/assign/assign.go",
+     "proto/riders/v1/riders.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 1,
+    "ms": 0.078
+   },
+   {
+    "task": "H02",
+    "source": "grep-fleet",
+    "budget": 8000,
+    "tokens": 3668,
+    "files_found": 4,
+    "files_needed": 4,
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 1,
+    "ms": 0.781
+   },
+   {
+    "task": "H02",
+    "source": "fleet-code-context",
+    "budget": 8000,
+    "tokens": 1622,
+    "files_found": 4,
+    "files_needed": 4,
+    "owners_found": 3,
+    "owners_needed": 3,
+    "conventions_found": 2,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 0.331
+   },
+   {
+    "task": "H03",
+    "source": "agents-md",
+    "budget": 2000,
+    "tokens": 56,
+    "files_found": 0,
+    "files_needed": 2,
+    "missing": [
+     "pricing/internal/quote/quote.go",
+     "platform-go/money/money.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 1,
+    "conventions_found": 0,
+    "conventions_needed": 1,
+    "stale_as_fact": 1,
+    "ms": 0
+   },
+   {
+    "task": "H03",
+    "source": "grep-repo",
+    "budget": 2000,
+    "tokens": 237,
+    "files_found": 1,
+    "files_needed": 2,
+    "missing": [
+     "platform-go/money/money.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 1,
+    "conventions_found": 0,
+    "conventions_needed": 1,
+    "stale_as_fact": 1,
+    "ms": 0.045
+   },
+   {
+    "task": "H03",
+    "source": "grep-fleet",
+    "budget": 2000,
+    "tokens": 1962,
+    "files_found": 1,
+    "files_needed": 2,
+    "missing": [
+     "platform-go/money/money.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 1,
+    "conventions_found": 0,
+    "conventions_needed": 1,
+    "stale_as_fact": 1,
+    "ms": 0.727
+   },
+   {
+    "task": "H03",
+    "source": "fleet-code-context",
+    "budget": 2000,
+    "tokens": 1396,
+    "files_found": 2,
+    "files_needed": 2,
+    "owners_found": 1,
+    "owners_needed": 1,
+    "conventions_found": 1,
+    "conventions_needed": 1,
+    "stale_as_fact": 0,
+    "ms": 0.288
+   },
+   {
+    "task": "H03",
+    "source": "agents-md",
+    "budget": 4000,
+    "tokens": 56,
+    "files_found": 0,
+    "files_needed": 2,
+    "missing": [
+     "pricing/internal/quote/quote.go",
+     "platform-go/money/money.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 1,
+    "conventions_found": 0,
+    "conventions_needed": 1,
+    "stale_as_fact": 1,
+    "ms": 0
+   },
+   {
+    "task": "H03",
+    "source": "grep-repo",
+    "budget": 4000,
+    "tokens": 237,
+    "files_found": 1,
+    "files_needed": 2,
+    "missing": [
+     "platform-go/money/money.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 1,
+    "conventions_found": 0,
+    "conventions_needed": 1,
+    "stale_as_fact": 1,
+    "ms": 0.052
+   },
+   {
+    "task": "H03",
+    "source": "grep-fleet",
+    "budget": 4000,
+    "tokens": 2433,
+    "files_found": 2,
+    "files_needed": 2,
+    "owners_found": 0,
+    "owners_needed": 1,
+    "conventions_found": 0,
+    "conventions_needed": 1,
+    "stale_as_fact": 1,
+    "ms": 0.746
+   },
+   {
+    "task": "H03",
+    "source": "fleet-code-context",
+    "budget": 4000,
+    "tokens": 1396,
+    "files_found": 2,
+    "files_needed": 2,
+    "owners_found": 1,
+    "owners_needed": 1,
+    "conventions_found": 1,
+    "conventions_needed": 1,
+    "stale_as_fact": 0,
+    "ms": 0.276
+   },
+   {
+    "task": "H03",
+    "source": "agents-md",
+    "budget": 8000,
+    "tokens": 56,
+    "files_found": 0,
+    "files_needed": 2,
+    "missing": [
+     "pricing/internal/quote/quote.go",
+     "platform-go/money/money.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 1,
+    "conventions_found": 0,
+    "conventions_needed": 1,
+    "stale_as_fact": 1,
+    "ms": 0
+   },
+   {
+    "task": "H03",
+    "source": "grep-repo",
+    "budget": 8000,
+    "tokens": 237,
+    "files_found": 1,
+    "files_needed": 2,
+    "missing": [
+     "platform-go/money/money.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 1,
+    "conventions_found": 0,
+    "conventions_needed": 1,
+    "stale_as_fact": 1,
+    "ms": 0.047
+   },
+   {
+    "task": "H03",
+    "source": "grep-fleet",
+    "budget": 8000,
+    "tokens": 2433,
+    "files_found": 2,
+    "files_needed": 2,
+    "owners_found": 0,
+    "owners_needed": 1,
+    "conventions_found": 0,
+    "conventions_needed": 1,
+    "stale_as_fact": 1,
+    "ms": 0.717
+   },
+   {
+    "task": "H03",
+    "source": "fleet-code-context",
+    "budget": 8000,
+    "tokens": 1396,
+    "files_found": 2,
+    "files_needed": 2,
+    "owners_found": 1,
+    "owners_needed": 1,
+    "conventions_found": 1,
+    "conventions_needed": 1,
+    "stale_as_fact": 0,
+    "ms": 0.273
+   },
+   {
+    "task": "H04",
+    "source": "agents-md",
+    "budget": 2000,
+    "tokens": 87,
+    "files_found": 0,
+    "files_needed": 3,
+    "missing": [
+     "proto/orders/v1/orders.proto",
+     "orders/internal/server/server.go",
+     "orders/internal/store/store.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 2,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 4,
+    "ms": 0
+   },
+   {
+    "task": "H04",
+    "source": "grep-repo",
+    "budget": 2000,
+    "tokens": 1241,
+    "files_found": 2,
+    "files_needed": 3,
+    "missing": [
+     "proto/orders/v1/orders.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 2,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 4,
+    "ms": 0.126
+   },
+   {
+    "task": "H04",
+    "source": "grep-fleet",
+    "budget": 2000,
+    "tokens": 1995,
+    "files_found": 2,
+    "files_needed": 3,
+    "missing": [
+     "proto/orders/v1/orders.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 2,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 4,
+    "ms": 1.056
+   },
+   {
+    "task": "H04",
+    "source": "fleet-code-context",
+    "budget": 2000,
+    "tokens": 2000,
+    "files_found": 3,
+    "files_needed": 3,
+    "owners_found": 2,
+    "owners_needed": 2,
+    "conventions_found": 2,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 0.709
+   },
+   {
+    "task": "H04",
+    "source": "agents-md",
+    "budget": 4000,
+    "tokens": 87,
+    "files_found": 0,
+    "files_needed": 3,
+    "missing": [
+     "proto/orders/v1/orders.proto",
+     "orders/internal/server/server.go",
+     "orders/internal/store/store.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 2,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 4,
+    "ms": 0
+   },
+   {
+    "task": "H04",
+    "source": "grep-repo",
+    "budget": 4000,
+    "tokens": 1241,
+    "files_found": 2,
+    "files_needed": 3,
+    "missing": [
+     "proto/orders/v1/orders.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 2,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 4,
+    "ms": 0.154
+   },
+   {
+    "task": "H04",
+    "source": "grep-fleet",
+    "budget": 4000,
+    "tokens": 3964,
+    "files_found": 3,
+    "files_needed": 3,
+    "owners_found": 0,
+    "owners_needed": 2,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 4,
+    "ms": 1.063
+   },
+   {
+    "task": "H04",
+    "source": "fleet-code-context",
+    "budget": 4000,
+    "tokens": 2958,
+    "files_found": 3,
+    "files_needed": 3,
+    "owners_found": 2,
+    "owners_needed": 2,
+    "conventions_found": 2,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 0.713
+   },
+   {
+    "task": "H04",
+    "source": "agents-md",
+    "budget": 8000,
+    "tokens": 87,
+    "files_found": 0,
+    "files_needed": 3,
+    "missing": [
+     "proto/orders/v1/orders.proto",
+     "orders/internal/server/server.go",
+     "orders/internal/store/store.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 2,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 4,
+    "ms": 0
+   },
+   {
+    "task": "H04",
+    "source": "grep-repo",
+    "budget": 8000,
+    "tokens": 1241,
+    "files_found": 2,
+    "files_needed": 3,
+    "missing": [
+     "proto/orders/v1/orders.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 2,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 4,
+    "ms": 0.156
+   },
+   {
+    "task": "H04",
+    "source": "grep-fleet",
+    "budget": 8000,
+    "tokens": 6308,
+    "files_found": 3,
+    "files_needed": 3,
+    "owners_found": 0,
+    "owners_needed": 2,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 4,
+    "ms": 1.019
+   },
+   {
+    "task": "H04",
+    "source": "fleet-code-context",
+    "budget": 8000,
+    "tokens": 2958,
+    "files_found": 3,
+    "files_needed": 3,
+    "owners_found": 2,
+    "owners_needed": 2,
+    "conventions_found": 2,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 0.715
+   },
+   {
+    "task": "H05",
+    "source": "agents-md",
+    "budget": 2000,
+    "tokens": 74,
+    "files_found": 0,
+    "files_needed": 3,
+    "missing": [
+     "restaurants/internal/consumer/order_placed.go",
+     "platform-go/money/money.go",
+     "proto/events/v1/events.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 1,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 0
+   },
+   {
+    "task": "H05",
+    "source": "grep-repo",
+    "budget": 2000,
+    "tokens": 277,
+    "files_found": 1,
+    "files_needed": 3,
+    "missing": [
+     "platform-go/money/money.go",
+     "proto/events/v1/events.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 1,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 0.066
+   },
+   {
+    "task": "H05",
+    "source": "grep-fleet",
+    "budget": 2000,
+    "tokens": 1997,
+    "files_found": 3,
+    "files_needed": 3,
+    "owners_found": 0,
+    "owners_needed": 1,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 0.856
+   },
+   {
+    "task": "H05",
+    "source": "fleet-code-context",
+    "budget": 2000,
+    "tokens": 1531,
+    "files_found": 2,
+    "files_needed": 3,
+    "missing": [
+     "platform-go/money/money.go"
+    ],
+    "owners_found": 1,
+    "owners_needed": 1,
+    "conventions_found": 2,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 0.328
+   },
+   {
+    "task": "H05",
+    "source": "agents-md",
+    "budget": 4000,
+    "tokens": 74,
+    "files_found": 0,
+    "files_needed": 3,
+    "missing": [
+     "restaurants/internal/consumer/order_placed.go",
+     "platform-go/money/money.go",
+     "proto/events/v1/events.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 1,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 0
+   },
+   {
+    "task": "H05",
+    "source": "grep-repo",
+    "budget": 4000,
+    "tokens": 277,
+    "files_found": 1,
+    "files_needed": 3,
+    "missing": [
+     "platform-go/money/money.go",
+     "proto/events/v1/events.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 1,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 0.065
+   },
+   {
+    "task": "H05",
+    "source": "grep-fleet",
+    "budget": 4000,
+    "tokens": 3970,
+    "files_found": 3,
+    "files_needed": 3,
+    "owners_found": 0,
+    "owners_needed": 1,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 1.101
+   },
+   {
+    "task": "H05",
+    "source": "fleet-code-context",
+    "budget": 4000,
+    "tokens": 1531,
+    "files_found": 2,
+    "files_needed": 3,
+    "missing": [
+     "platform-go/money/money.go"
+    ],
+    "owners_found": 1,
+    "owners_needed": 1,
+    "conventions_found": 2,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 1.271
+   },
+   {
+    "task": "H05",
+    "source": "agents-md",
+    "budget": 8000,
+    "tokens": 74,
+    "files_found": 0,
+    "files_needed": 3,
+    "missing": [
+     "restaurants/internal/consumer/order_placed.go",
+     "platform-go/money/money.go",
+     "proto/events/v1/events.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 1,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 0.002
+   },
+   {
+    "task": "H05",
+    "source": "grep-repo",
+    "budget": 8000,
+    "tokens": 277,
+    "files_found": 1,
+    "files_needed": 3,
+    "missing": [
+     "platform-go/money/money.go",
+     "proto/events/v1/events.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 1,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 0.09
+   },
+   {
+    "task": "H05",
+    "source": "grep-fleet",
+    "budget": 8000,
+    "tokens": 6429,
+    "files_found": 3,
+    "files_needed": 3,
+    "owners_found": 0,
+    "owners_needed": 1,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 1.501
+   },
+   {
+    "task": "H05",
+    "source": "fleet-code-context",
+    "budget": 8000,
+    "tokens": 1531,
+    "files_found": 2,
+    "files_needed": 3,
+    "missing": [
+     "platform-go/money/money.go"
+    ],
+    "owners_found": 1,
+    "owners_needed": 1,
+    "conventions_found": 2,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 0.463
+   },
+   {
+    "task": "H06",
+    "source": "agents-md",
+    "budget": 2000,
+    "tokens": 76,
+    "files_found": 0,
+    "files_needed": 4,
+    "missing": [
+     "proto/payments/v1/payments.proto",
+     "payments/internal/server/server.go",
+     "orders/internal/server/server.go",
+     "payments/internal/consumer/order_cancelled.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 1,
+    "conventions_needed": 3,
+    "stale_as_fact": 0,
+    "ms": 0.001
+   },
+   {
+    "task": "H06",
+    "source": "grep-repo",
+    "budget": 2000,
+    "tokens": 743,
+    "files_found": 2,
+    "files_needed": 4,
+    "missing": [
+     "proto/payments/v1/payments.proto",
+     "orders/internal/server/server.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 1,
+    "conventions_needed": 3,
+    "stale_as_fact": 0,
+    "ms": 0.103
+   },
+   {
+    "task": "H06",
+    "source": "grep-fleet",
+    "budget": 2000,
+    "tokens": 1961,
+    "files_found": 3,
+    "files_needed": 4,
+    "missing": [
+     "payments/internal/server/server.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 1,
+    "conventions_needed": 3,
+    "stale_as_fact": 0,
+    "ms": 1.232
+   },
+   {
+    "task": "H06",
+    "source": "fleet-code-context",
+    "budget": 2000,
+    "tokens": 1992,
+    "files_found": 3,
+    "files_needed": 4,
+    "missing": [
+     "payments/internal/server/server.go"
+    ],
+    "owners_found": 3,
+    "owners_needed": 3,
+    "conventions_found": 3,
+    "conventions_needed": 3,
+    "stale_as_fact": 0,
+    "ms": 2.087
+   },
+   {
+    "task": "H06",
+    "source": "agents-md",
+    "budget": 4000,
+    "tokens": 76,
+    "files_found": 0,
+    "files_needed": 4,
+    "missing": [
+     "proto/payments/v1/payments.proto",
+     "payments/internal/server/server.go",
+     "orders/internal/server/server.go",
+     "payments/internal/consumer/order_cancelled.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 1,
+    "conventions_needed": 3,
+    "stale_as_fact": 0,
+    "ms": 0.001
+   },
+   {
+    "task": "H06",
+    "source": "grep-repo",
+    "budget": 4000,
+    "tokens": 743,
+    "files_found": 2,
+    "files_needed": 4,
+    "missing": [
+     "proto/payments/v1/payments.proto",
+     "orders/internal/server/server.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 1,
+    "conventions_needed": 3,
+    "stale_as_fact": 0,
+    "ms": 0.079
+   },
+   {
+    "task": "H06",
+    "source": "grep-fleet",
+    "budget": 4000,
+    "tokens": 3992,
+    "files_found": 4,
+    "files_needed": 4,
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 1,
+    "conventions_needed": 3,
+    "stale_as_fact": 0,
+    "ms": 0.968
+   },
+   {
+    "task": "H06",
+    "source": "fleet-code-context",
+    "budget": 4000,
+    "tokens": 3132,
+    "files_found": 4,
+    "files_needed": 4,
+    "owners_found": 3,
+    "owners_needed": 3,
+    "conventions_found": 3,
+    "conventions_needed": 3,
+    "stale_as_fact": 0,
+    "ms": 0.63
+   },
+   {
+    "task": "H06",
+    "source": "agents-md",
+    "budget": 8000,
+    "tokens": 76,
+    "files_found": 0,
+    "files_needed": 4,
+    "missing": [
+     "proto/payments/v1/payments.proto",
+     "payments/internal/server/server.go",
+     "orders/internal/server/server.go",
+     "payments/internal/consumer/order_cancelled.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 1,
+    "conventions_needed": 3,
+    "stale_as_fact": 0,
+    "ms": 0
+   },
+   {
+    "task": "H06",
+    "source": "grep-repo",
+    "budget": 8000,
+    "tokens": 743,
+    "files_found": 2,
+    "files_needed": 4,
+    "missing": [
+     "proto/payments/v1/payments.proto",
+     "orders/internal/server/server.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 1,
+    "conventions_needed": 3,
+    "stale_as_fact": 0,
+    "ms": 0.078
+   },
+   {
+    "task": "H06",
+    "source": "grep-fleet",
+    "budget": 8000,
+    "tokens": 6215,
+    "files_found": 4,
+    "files_needed": 4,
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 1,
+    "conventions_needed": 3,
+    "stale_as_fact": 0,
+    "ms": 1.413
+   },
+   {
+    "task": "H06",
+    "source": "fleet-code-context",
+    "budget": 8000,
+    "tokens": 3132,
+    "files_found": 4,
+    "files_needed": 4,
+    "owners_found": 3,
+    "owners_needed": 3,
+    "conventions_found": 3,
+    "conventions_needed": 3,
+    "stale_as_fact": 0,
+    "ms": 1.352
+   },
+   {
+    "task": "H07",
+    "source": "agents-md",
+    "budget": 2000,
+    "tokens": 87,
+    "files_found": 0,
+    "files_needed": 2,
+    "missing": [
+     "orders/internal/server/server.go",
+     "platform-go/log/log.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 1,
+    "conventions_found": 0,
+    "conventions_needed": 1,
+    "stale_as_fact": 4,
+    "ms": 0.002
+   },
+   {
+    "task": "H07",
+    "source": "grep-repo",
+    "budget": 2000,
+    "tokens": 1285,
+    "files_found": 1,
+    "files_needed": 2,
+    "missing": [
+     "platform-go/log/log.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 1,
+    "conventions_found": 0,
+    "conventions_needed": 1,
+    "stale_as_fact": 4,
+    "ms": 0.221
+   },
+   {
+    "task": "H07",
+    "source": "grep-fleet",
+    "budget": 2000,
+    "tokens": 1997,
+    "files_found": 2,
+    "files_needed": 2,
+    "owners_found": 0,
+    "owners_needed": 1,
+    "conventions_found": 0,
+    "conventions_needed": 1,
+    "stale_as_fact": 4,
+    "ms": 1.478
+   },
+   {
+    "task": "H07",
+    "source": "fleet-code-context",
+    "budget": 2000,
+    "tokens": 1979,
+    "files_found": 2,
+    "files_needed": 2,
+    "owners_found": 1,
+    "owners_needed": 1,
+    "conventions_found": 1,
+    "conventions_needed": 1,
+    "stale_as_fact": 0,
+    "ms": 0.635
+   },
+   {
+    "task": "H07",
+    "source": "agents-md",
+    "budget": 4000,
+    "tokens": 87,
+    "files_found": 0,
+    "files_needed": 2,
+    "missing": [
+     "orders/internal/server/server.go",
+     "platform-go/log/log.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 1,
+    "conventions_found": 0,
+    "conventions_needed": 1,
+    "stale_as_fact": 4,
+    "ms": 0
+   },
+   {
+    "task": "H07",
+    "source": "grep-repo",
+    "budget": 4000,
+    "tokens": 1285,
+    "files_found": 1,
+    "files_needed": 2,
+    "missing": [
+     "platform-go/log/log.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 1,
+    "conventions_found": 0,
+    "conventions_needed": 1,
+    "stale_as_fact": 4,
+    "ms": 0.158
+   },
+   {
+    "task": "H07",
+    "source": "grep-fleet",
+    "budget": 4000,
+    "tokens": 3996,
+    "files_found": 2,
+    "files_needed": 2,
+    "owners_found": 0,
+    "owners_needed": 1,
+    "conventions_found": 0,
+    "conventions_needed": 1,
+    "stale_as_fact": 4,
+    "ms": 3.023
+   },
+   {
+    "task": "H07",
+    "source": "fleet-code-context",
+    "budget": 4000,
+    "tokens": 2873,
+    "files_found": 2,
+    "files_needed": 2,
+    "owners_found": 1,
+    "owners_needed": 1,
+    "conventions_found": 1,
+    "conventions_needed": 1,
+    "stale_as_fact": 0,
+    "ms": 0.685
+   },
+   {
+    "task": "H07",
+    "source": "agents-md",
+    "budget": 8000,
+    "tokens": 87,
+    "files_found": 0,
+    "files_needed": 2,
+    "missing": [
+     "orders/internal/server/server.go",
+     "platform-go/log/log.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 1,
+    "conventions_found": 0,
+    "conventions_needed": 1,
+    "stale_as_fact": 4,
+    "ms": 0
+   },
+   {
+    "task": "H07",
+    "source": "grep-repo",
+    "budget": 8000,
+    "tokens": 1285,
+    "files_found": 1,
+    "files_needed": 2,
+    "missing": [
+     "platform-go/log/log.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 1,
+    "conventions_found": 0,
+    "conventions_needed": 1,
+    "stale_as_fact": 4,
+    "ms": 0.145
+   },
+   {
+    "task": "H07",
+    "source": "grep-fleet",
+    "budget": 8000,
+    "tokens": 7959,
+    "files_found": 2,
+    "files_needed": 2,
+    "owners_found": 0,
+    "owners_needed": 1,
+    "conventions_found": 0,
+    "conventions_needed": 1,
+    "stale_as_fact": 4,
+    "ms": 1.413
+   },
+   {
+    "task": "H07",
+    "source": "fleet-code-context",
+    "budget": 8000,
+    "tokens": 2873,
+    "files_found": 2,
+    "files_needed": 2,
+    "owners_found": 1,
+    "owners_needed": 1,
+    "conventions_found": 1,
+    "conventions_needed": 1,
+    "stale_as_fact": 0,
+    "ms": 1.975
+   },
+   {
+    "task": "H08",
+    "source": "agents-md",
+    "budget": 2000,
+    "tokens": 87,
+    "files_found": 0,
+    "files_needed": 3,
+    "missing": [
+     "orders/internal/server/track.go",
+     "dispatch/internal/assign/assign.go",
+     "proto/dispatch/v1/dispatch.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 2,
+    "conventions_found": 0,
+    "conventions_needed": 0,
+    "stale_as_fact": 4,
+    "ms": 0.001
+   },
+   {
+    "task": "H08",
+    "source": "grep-repo",
+    "budget": 2000,
+    "tokens": 1285,
+    "files_found": 1,
+    "files_needed": 3,
+    "missing": [
+     "dispatch/internal/assign/assign.go",
+     "proto/dispatch/v1/dispatch.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 2,
+    "conventions_found": 0,
+    "conventions_needed": 0,
+    "stale_as_fact": 4,
+    "ms": 0.194
+   },
+   {
+    "task": "H08",
+    "source": "grep-fleet",
+    "budget": 2000,
+    "tokens": 1985,
+    "files_found": 3,
+    "files_needed": 3,
+    "owners_found": 0,
+    "owners_needed": 2,
+    "conventions_found": 0,
+    "conventions_needed": 0,
+    "stale_as_fact": 4,
+    "ms": 1.267
+   },
+   {
+    "task": "H08",
+    "source": "fleet-code-context",
+    "budget": 2000,
+    "tokens": 1953,
+    "files_found": 3,
+    "files_needed": 3,
+    "owners_found": 2,
+    "owners_needed": 2,
+    "conventions_found": 0,
+    "conventions_needed": 0,
+    "stale_as_fact": 0,
+    "ms": 0.632
+   },
+   {
+    "task": "H08",
+    "source": "agents-md",
+    "budget": 4000,
+    "tokens": 87,
+    "files_found": 0,
+    "files_needed": 3,
+    "missing": [
+     "orders/internal/server/track.go",
+     "dispatch/internal/assign/assign.go",
+     "proto/dispatch/v1/dispatch.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 2,
+    "conventions_found": 0,
+    "conventions_needed": 0,
+    "stale_as_fact": 4,
+    "ms": 0
+   },
+   {
+    "task": "H08",
+    "source": "grep-repo",
+    "budget": 4000,
+    "tokens": 1285,
+    "files_found": 1,
+    "files_needed": 3,
+    "missing": [
+     "dispatch/internal/assign/assign.go",
+     "proto/dispatch/v1/dispatch.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 2,
+    "conventions_found": 0,
+    "conventions_needed": 0,
+    "stale_as_fact": 4,
+    "ms": 0.215
+   },
+   {
+    "task": "H08",
+    "source": "grep-fleet",
+    "budget": 4000,
+    "tokens": 3999,
+    "files_found": 3,
+    "files_needed": 3,
+    "owners_found": 0,
+    "owners_needed": 2,
+    "conventions_found": 0,
+    "conventions_needed": 0,
+    "stale_as_fact": 4,
+    "ms": 1.611
+   },
+   {
+    "task": "H08",
+    "source": "fleet-code-context",
+    "budget": 4000,
+    "tokens": 2404,
+    "files_found": 3,
+    "files_needed": 3,
+    "owners_found": 2,
+    "owners_needed": 2,
+    "conventions_found": 0,
+    "conventions_needed": 0,
+    "stale_as_fact": 0,
+    "ms": 2.036
+   },
+   {
+    "task": "H08",
+    "source": "agents-md",
+    "budget": 8000,
+    "tokens": 87,
+    "files_found": 0,
+    "files_needed": 3,
+    "missing": [
+     "orders/internal/server/track.go",
+     "dispatch/internal/assign/assign.go",
+     "proto/dispatch/v1/dispatch.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 2,
+    "conventions_found": 0,
+    "conventions_needed": 0,
+    "stale_as_fact": 4,
+    "ms": 0.001
+   },
+   {
+    "task": "H08",
+    "source": "grep-repo",
+    "budget": 8000,
+    "tokens": 1285,
+    "files_found": 1,
+    "files_needed": 3,
+    "missing": [
+     "dispatch/internal/assign/assign.go",
+     "proto/dispatch/v1/dispatch.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 2,
+    "conventions_found": 0,
+    "conventions_needed": 0,
+    "stale_as_fact": 4,
+    "ms": 0.26
+   },
+   {
+    "task": "H08",
+    "source": "grep-fleet",
+    "budget": 8000,
+    "tokens": 6896,
+    "files_found": 3,
+    "files_needed": 3,
+    "owners_found": 0,
+    "owners_needed": 2,
+    "conventions_found": 0,
+    "conventions_needed": 0,
+    "stale_as_fact": 4,
+    "ms": 1.389
+   },
+   {
+    "task": "H08",
+    "source": "fleet-code-context",
+    "budget": 8000,
+    "tokens": 2404,
+    "files_found": 3,
+    "files_needed": 3,
+    "owners_found": 2,
+    "owners_needed": 2,
+    "conventions_found": 0,
+    "conventions_needed": 0,
+    "stale_as_fact": 0,
+    "ms": 0.63
+   },
+   {
+    "task": "H09",
+    "source": "agents-md",
+    "budget": 2000,
+    "tokens": 76,
+    "files_found": 0,
+    "files_needed": 4,
+    "missing": [
+     "proto/payments/v1/payments.proto",
+     "payments/internal/server/server.go",
+     "orders/internal/server/server.go",
+     "proto/orders/v1/orders.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 0
+   },
+   {
+    "task": "H09",
+    "source": "grep-repo",
+    "budget": 2000,
+    "tokens": 788,
+    "files_found": 1,
+    "files_needed": 4,
+    "missing": [
+     "proto/payments/v1/payments.proto",
+     "orders/internal/server/server.go",
+     "proto/orders/v1/orders.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 0.07
+   },
+   {
+    "task": "H09",
+    "source": "grep-fleet",
+    "budget": 2000,
+    "tokens": 1967,
+    "files_found": 0,
+    "files_needed": 4,
+    "missing": [
+     "proto/payments/v1/payments.proto",
+     "payments/internal/server/server.go",
+     "orders/internal/server/server.go",
+     "proto/orders/v1/orders.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 1.743
+   },
+   {
+    "task": "H09",
+    "source": "fleet-code-context",
+    "budget": 2000,
+    "tokens": 172,
+    "files_found": 0,
+    "files_needed": 4,
+    "missing": [
+     "proto/payments/v1/payments.proto",
+     "payments/internal/server/server.go",
+     "orders/internal/server/server.go",
+     "proto/orders/v1/orders.proto"
+    ],
+    "owners_found": 1,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 0.16
+   },
+   {
+    "task": "H09",
+    "source": "agents-md",
+    "budget": 4000,
+    "tokens": 76,
+    "files_found": 0,
+    "files_needed": 4,
+    "missing": [
+     "proto/payments/v1/payments.proto",
+     "payments/internal/server/server.go",
+     "orders/internal/server/server.go",
+     "proto/orders/v1/orders.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 0.001
+   },
+   {
+    "task": "H09",
+    "source": "grep-repo",
+    "budget": 4000,
+    "tokens": 788,
+    "files_found": 1,
+    "files_needed": 4,
+    "missing": [
+     "proto/payments/v1/payments.proto",
+     "orders/internal/server/server.go",
+     "proto/orders/v1/orders.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 0.092
+   },
+   {
+    "task": "H09",
+    "source": "grep-fleet",
+    "budget": 4000,
+    "tokens": 3933,
+    "files_found": 2,
+    "files_needed": 4,
+    "missing": [
+     "proto/payments/v1/payments.proto",
+     "proto/orders/v1/orders.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 1.173
+   },
+   {
+    "task": "H09",
+    "source": "fleet-code-context",
+    "budget": 4000,
+    "tokens": 172,
+    "files_found": 0,
+    "files_needed": 4,
+    "missing": [
+     "proto/payments/v1/payments.proto",
+     "payments/internal/server/server.go",
+     "orders/internal/server/server.go",
+     "proto/orders/v1/orders.proto"
+    ],
+    "owners_found": 1,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 0.076
+   },
+   {
+    "task": "H09",
+    "source": "agents-md",
+    "budget": 8000,
+    "tokens": 76,
+    "files_found": 0,
+    "files_needed": 4,
+    "missing": [
+     "proto/payments/v1/payments.proto",
+     "payments/internal/server/server.go",
+     "orders/internal/server/server.go",
+     "proto/orders/v1/orders.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 0
+   },
+   {
+    "task": "H09",
+    "source": "grep-repo",
+    "budget": 8000,
+    "tokens": 788,
+    "files_found": 1,
+    "files_needed": 4,
+    "missing": [
+     "proto/payments/v1/payments.proto",
+     "orders/internal/server/server.go",
+     "proto/orders/v1/orders.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 0.07
+   },
+   {
+    "task": "H09",
+    "source": "grep-fleet",
+    "budget": 8000,
+    "tokens": 4811,
+    "files_found": 4,
+    "files_needed": 4,
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 0.723
+   },
+   {
+    "task": "H09",
+    "source": "fleet-code-context",
+    "budget": 8000,
+    "tokens": 172,
+    "files_found": 0,
+    "files_needed": 4,
+    "missing": [
+     "proto/payments/v1/payments.proto",
+     "payments/internal/server/server.go",
+     "orders/internal/server/server.go",
+     "proto/orders/v1/orders.proto"
+    ],
+    "owners_found": 1,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 0.063
+   },
+   {
+    "task": "H10",
+    "source": "agents-md",
+    "budget": 2000,
+    "tokens": 100,
+    "files_found": 0,
+    "files_needed": 3,
+    "missing": [
+     "dispatch/internal/assign/assign.go",
+     "proto/riders/v1/riders.proto",
+     "riders/internal/server/server.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 1,
+    "ms": 0.001
+   },
+   {
+    "task": "H10",
+    "source": "grep-repo",
+    "budget": 2000,
+    "tokens": 1051,
+    "files_found": 1,
+    "files_needed": 3,
+    "missing": [
+     "proto/riders/v1/riders.proto",
+     "riders/internal/server/server.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 1,
+    "ms": 0.111
+   },
+   {
+    "task": "H10",
+    "source": "grep-fleet",
+    "budget": 2000,
+    "tokens": 1992,
+    "files_found": 1,
+    "files_needed": 3,
+    "missing": [
+     "proto/riders/v1/riders.proto",
+     "riders/internal/server/server.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 1,
+    "ms": 0.848
+   },
+   {
+    "task": "H10",
+    "source": "fleet-code-context",
+    "budget": 2000,
+    "tokens": 1648,
+    "files_found": 1,
+    "files_needed": 3,
+    "missing": [
+     "proto/riders/v1/riders.proto",
+     "riders/internal/server/server.go"
+    ],
+    "owners_found": 2,
+    "owners_needed": 3,
+    "conventions_found": 2,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 0.466
+   },
+   {
+    "task": "H10",
+    "source": "agents-md",
+    "budget": 4000,
+    "tokens": 100,
+    "files_found": 0,
+    "files_needed": 3,
+    "missing": [
+     "dispatch/internal/assign/assign.go",
+     "proto/riders/v1/riders.proto",
+     "riders/internal/server/server.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 1,
+    "ms": 0
+   },
+   {
+    "task": "H10",
+    "source": "grep-repo",
+    "budget": 4000,
+    "tokens": 1051,
+    "files_found": 1,
+    "files_needed": 3,
+    "missing": [
+     "proto/riders/v1/riders.proto",
+     "riders/internal/server/server.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 1,
+    "ms": 0.223
+   },
+   {
+    "task": "H10",
+    "source": "grep-fleet",
+    "budget": 4000,
+    "tokens": 3138,
+    "files_found": 3,
+    "files_needed": 3,
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 1,
+    "ms": 2.437
+   },
+   {
+    "task": "H10",
+    "source": "fleet-code-context",
+    "budget": 4000,
+    "tokens": 1648,
+    "files_found": 1,
+    "files_needed": 3,
+    "missing": [
+     "proto/riders/v1/riders.proto",
+     "riders/internal/server/server.go"
+    ],
+    "owners_found": 2,
+    "owners_needed": 3,
+    "conventions_found": 2,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 0.43
+   },
+   {
+    "task": "H10",
+    "source": "agents-md",
+    "budget": 8000,
+    "tokens": 100,
+    "files_found": 0,
+    "files_needed": 3,
+    "missing": [
+     "dispatch/internal/assign/assign.go",
+     "proto/riders/v1/riders.proto",
+     "riders/internal/server/server.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 1,
+    "ms": 0
+   },
+   {
+    "task": "H10",
+    "source": "grep-repo",
+    "budget": 8000,
+    "tokens": 1051,
+    "files_found": 1,
+    "files_needed": 3,
+    "missing": [
+     "proto/riders/v1/riders.proto",
+     "riders/internal/server/server.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 1,
+    "ms": 0.122
+   },
+   {
+    "task": "H10",
+    "source": "grep-fleet",
+    "budget": 8000,
+    "tokens": 3138,
+    "files_found": 3,
+    "files_needed": 3,
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 1,
+    "ms": 1.063
+   },
+   {
+    "task": "H10",
+    "source": "fleet-code-context",
+    "budget": 8000,
+    "tokens": 1648,
+    "files_found": 1,
+    "files_needed": 3,
+    "missing": [
+     "proto/riders/v1/riders.proto",
+     "riders/internal/server/server.go"
+    ],
+    "owners_found": 2,
+    "owners_needed": 3,
+    "conventions_found": 2,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 1.077
+   }
+  ],
+  "drift": {
+   "claims": 41,
+   "checked": 38,
+   "flagged": 7,
+   "planted": 7,
+   "caught": 7
+  }
+ },
+ {
+  "name": "crowded",
+  "repos": 309,
+  "files": 3209,
+  "entities": 11767,
+  "cross_repo_refs": 6123,
+  "summary": [
+   {
+    "source": "agents-md",
+    "budget": 2000,
+    "tasks": 10,
+    "file_recall": 0,
+    "tasks_with_every_file": 0,
+    "owner_recall": 0,
+    "convention_recall": 0.133,
+    "stale_as_fact": 15,
+    "mean_tokens": 78.3,
+    "cross_repo_files_needed": 19,
+    "cross_repo_files_found": 0
+   },
+   {
+    "source": "grep-repo",
+    "budget": 2000,
+    "tasks": 10,
+    "file_recall": 0.4,
+    "tasks_with_every_file": 0,
+    "owner_recall": 0,
+    "convention_recall": 0.133,
+    "stale_as_fact": 15,
+    "mean_tokens": 818.9,
+    "cross_repo_files_needed": 19,
+    "cross_repo_files_found": 0
+   },
+   {
+    "source": "grep-fleet",
+    "budget": 2000,
+    "tasks": 10,
+    "file_recall": 0.392,
+    "tasks_with_every_file": 1,
+    "owner_recall": 0,
+    "convention_recall": 0.133,
+    "stale_as_fact": 15,
+    "mean_tokens": 1986.2,
+    "cross_repo_files_needed": 19,
+    "cross_repo_files_found": 6
+   },
+   {
+    "source": "fleet-code-context",
+    "budget": 2000,
+    "tasks": 10,
+    "file_recall": 0.533,
+    "tasks_with_every_file": 2,
+    "owner_recall": 0.817,
+    "convention_recall": 0.9,
+    "stale_as_fact": 0,
+    "mean_tokens": 1664.1,
+    "cross_repo_files_needed": 19,
+    "cross_repo_files_found": 7
+   },
+   {
+    "source": "agents-md",
+    "budget": 4000,
+    "tasks": 10,
+    "file_recall": 0,
+    "tasks_with_every_file": 0,
+    "owner_recall": 0,
+    "convention_recall": 0.133,
+    "stale_as_fact": 15,
+    "mean_tokens": 78.3,
+    "cross_repo_files_needed": 19,
+    "cross_repo_files_found": 0
+   },
+   {
+    "source": "grep-repo",
+    "budget": 4000,
+    "tasks": 10,
+    "file_recall": 0.4,
+    "tasks_with_every_file": 0,
+    "owner_recall": 0,
+    "convention_recall": 0.133,
+    "stale_as_fact": 15,
+    "mean_tokens": 818.9,
+    "cross_repo_files_needed": 19,
+    "cross_repo_files_found": 0
+   },
+   {
+    "source": "grep-fleet",
+    "budget": 4000,
+    "tasks": 10,
+    "file_recall": 0.358,
+    "tasks_with_every_file": 1,
+    "owner_recall": 0,
+    "convention_recall": 0.133,
+    "stale_as_fact": 15,
+    "mean_tokens": 3983,
+    "cross_repo_files_needed": 19,
+    "cross_repo_files_found": 5
+   },
+   {
+    "source": "fleet-code-context",
+    "budget": 4000,
+    "tasks": 10,
+    "file_recall": 0.567,
+    "tasks_with_every_file": 2,
+    "owner_recall": 0.85,
+    "convention_recall": 0.9,
+    "stale_as_fact": 0,
+    "mean_tokens": 2481.3,
+    "cross_repo_files_needed": 19,
+    "cross_repo_files_found": 7
+   },
+   {
+    "source": "agents-md",
+    "budget": 8000,
+    "tasks": 10,
+    "file_recall": 0,
+    "tasks_with_every_file": 0,
+    "owner_recall": 0,
+    "convention_recall": 0.133,
+    "stale_as_fact": 15,
+    "mean_tokens": 78.3,
+    "cross_repo_files_needed": 19,
+    "cross_repo_files_found": 0
+   },
+   {
+    "source": "grep-repo",
+    "budget": 8000,
+    "tasks": 10,
+    "file_recall": 0.4,
+    "tasks_with_every_file": 0,
+    "owner_recall": 0,
+    "convention_recall": 0.133,
+    "stale_as_fact": 15,
+    "mean_tokens": 818.9,
+    "cross_repo_files_needed": 19,
+    "cross_repo_files_found": 0
+   },
+   {
+    "source": "grep-fleet",
+    "budget": 8000,
+    "tasks": 10,
+    "file_recall": 0.425,
+    "tasks_with_every_file": 2,
+    "owner_recall": 0,
+    "convention_recall": 0.133,
+    "stale_as_fact": 15,
+    "mean_tokens": 7984,
+    "cross_repo_files_needed": 19,
+    "cross_repo_files_found": 7
+   },
+   {
+    "source": "fleet-code-context",
+    "budget": 8000,
+    "tasks": 10,
+    "file_recall": 0.567,
+    "tasks_with_every_file": 2,
+    "owner_recall": 0.85,
+    "convention_recall": 0.9,
+    "stale_as_fact": 0,
+    "mean_tokens": 3275,
+    "cross_repo_files_needed": 19,
+    "cross_repo_files_found": 7
+   }
+  ],
+  "outcomes": [
+   {
+    "task": "H01",
+    "source": "agents-md",
+    "budget": 2000,
+    "tokens": 76,
+    "files_found": 0,
+    "files_needed": 3,
+    "missing": [
+     "payments/internal/server/server.go",
+     "orders/internal/server/server.go",
+     "notifications/internal/push/push.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 1,
+    "stale_as_fact": 0,
+    "ms": 0.002
+   },
+   {
+    "task": "H01",
+    "source": "grep-repo",
+    "budget": 2000,
+    "tokens": 743,
+    "files_found": 1,
+    "files_needed": 3,
+    "missing": [
+     "orders/internal/server/server.go",
+     "notifications/internal/push/push.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 1,
+    "stale_as_fact": 0,
+    "ms": 0.344
+   },
+   {
+    "task": "H01",
+    "source": "grep-fleet",
+    "budget": 2000,
+    "tokens": 1960,
+    "files_found": 2,
+    "files_needed": 3,
+    "missing": [
+     "orders/internal/server/server.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 1,
+    "stale_as_fact": 0,
+    "ms": 61.285
+   },
+   {
+    "task": "H01",
+    "source": "fleet-code-context",
+    "budget": 2000,
+    "tokens": 1988,
+    "files_found": 2,
+    "files_needed": 3,
+    "missing": [
+     "notifications/internal/push/push.go"
+    ],
+    "owners_found": 2,
+    "owners_needed": 3,
+    "conventions_found": 1,
+    "conventions_needed": 1,
+    "stale_as_fact": 0,
+    "ms": 12.284
+   },
+   {
+    "task": "H01",
+    "source": "agents-md",
+    "budget": 4000,
+    "tokens": 76,
+    "files_found": 0,
+    "files_needed": 3,
+    "missing": [
+     "payments/internal/server/server.go",
+     "orders/internal/server/server.go",
+     "notifications/internal/push/push.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 1,
+    "stale_as_fact": 0,
+    "ms": 0
+   },
+   {
+    "task": "H01",
+    "source": "grep-repo",
+    "budget": 4000,
+    "tokens": 743,
+    "files_found": 1,
+    "files_needed": 3,
+    "missing": [
+     "orders/internal/server/server.go",
+     "notifications/internal/push/push.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 1,
+    "stale_as_fact": 0,
+    "ms": 0.339
+   },
+   {
+    "task": "H01",
+    "source": "grep-fleet",
+    "budget": 4000,
+    "tokens": 3973,
+    "files_found": 1,
+    "files_needed": 3,
+    "missing": [
+     "orders/internal/server/server.go",
+     "notifications/internal/push/push.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 1,
+    "stale_as_fact": 0,
+    "ms": 68.398
+   },
+   {
+    "task": "H01",
+    "source": "fleet-code-context",
+    "budget": 4000,
+    "tokens": 3512,
+    "files_found": 2,
+    "files_needed": 3,
+    "missing": [
+     "notifications/internal/push/push.go"
+    ],
+    "owners_found": 3,
+    "owners_needed": 3,
+    "conventions_found": 1,
+    "conventions_needed": 1,
+    "stale_as_fact": 0,
+    "ms": 12.741
+   },
+   {
+    "task": "H01",
+    "source": "agents-md",
+    "budget": 8000,
+    "tokens": 76,
+    "files_found": 0,
+    "files_needed": 3,
+    "missing": [
+     "payments/internal/server/server.go",
+     "orders/internal/server/server.go",
+     "notifications/internal/push/push.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 1,
+    "stale_as_fact": 0,
+    "ms": 0
+   },
+   {
+    "task": "H01",
+    "source": "grep-repo",
+    "budget": 8000,
+    "tokens": 743,
+    "files_found": 1,
+    "files_needed": 3,
+    "missing": [
+     "orders/internal/server/server.go",
+     "notifications/internal/push/push.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 1,
+    "stale_as_fact": 0,
+    "ms": 0.353
+   },
+   {
+    "task": "H01",
+    "source": "grep-fleet",
+    "budget": 8000,
+    "tokens": 7970,
+    "files_found": 3,
+    "files_needed": 3,
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 1,
+    "stale_as_fact": 0,
+    "ms": 79.698
+   },
+   {
+    "task": "H01",
+    "source": "fleet-code-context",
+    "budget": 8000,
+    "tokens": 3512,
+    "files_found": 2,
+    "files_needed": 3,
+    "missing": [
+     "notifications/internal/push/push.go"
+    ],
+    "owners_found": 3,
+    "owners_needed": 3,
+    "conventions_found": 1,
+    "conventions_needed": 1,
+    "stale_as_fact": 0,
+    "ms": 14.411
+   },
+   {
+    "task": "H02",
+    "source": "agents-md",
+    "budget": 2000,
+    "tokens": 64,
+    "files_found": 0,
+    "files_needed": 4,
+    "missing": [
+     "notifications/internal/consumer/rider_assigned.go",
+     "proto/events/v1/events.proto",
+     "dispatch/internal/assign/assign.go",
+     "proto/riders/v1/riders.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 1,
+    "ms": 0.001
+   },
+   {
+    "task": "H02",
+    "source": "grep-repo",
+    "budget": 2000,
+    "tokens": 539,
+    "files_found": 1,
+    "files_needed": 4,
+    "missing": [
+     "proto/events/v1/events.proto",
+     "dispatch/internal/assign/assign.go",
+     "proto/riders/v1/riders.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 1,
+    "ms": 0.525
+   },
+   {
+    "task": "H02",
+    "source": "grep-fleet",
+    "budget": 2000,
+    "tokens": 1999,
+    "files_found": 1,
+    "files_needed": 4,
+    "missing": [
+     "proto/events/v1/events.proto",
+     "dispatch/internal/assign/assign.go",
+     "proto/riders/v1/riders.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 1,
+    "ms": 50.651
+   },
+   {
+    "task": "H02",
+    "source": "fleet-code-context",
+    "budget": 2000,
+    "tokens": 1728,
+    "files_found": 2,
+    "files_needed": 4,
+    "missing": [
+     "proto/events/v1/events.proto",
+     "dispatch/internal/assign/assign.go"
+    ],
+    "owners_found": 2,
+    "owners_needed": 3,
+    "conventions_found": 2,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 19.294
+   },
+   {
+    "task": "H02",
+    "source": "agents-md",
+    "budget": 4000,
+    "tokens": 64,
+    "files_found": 0,
+    "files_needed": 4,
+    "missing": [
+     "notifications/internal/consumer/rider_assigned.go",
+     "proto/events/v1/events.proto",
+     "dispatch/internal/assign/assign.go",
+     "proto/riders/v1/riders.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 1,
+    "ms": 0
+   },
+   {
+    "task": "H02",
+    "source": "grep-repo",
+    "budget": 4000,
+    "tokens": 539,
+    "files_found": 1,
+    "files_needed": 4,
+    "missing": [
+     "proto/events/v1/events.proto",
+     "dispatch/internal/assign/assign.go",
+     "proto/riders/v1/riders.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 1,
+    "ms": 0.3
+   },
+   {
+    "task": "H02",
+    "source": "grep-fleet",
+    "budget": 4000,
+    "tokens": 3981,
+    "files_found": 1,
+    "files_needed": 4,
+    "missing": [
+     "proto/events/v1/events.proto",
+     "dispatch/internal/assign/assign.go",
+     "proto/riders/v1/riders.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 1,
+    "ms": 54.762
+   },
+   {
+    "task": "H02",
+    "source": "fleet-code-context",
+    "budget": 4000,
+    "tokens": 1728,
+    "files_found": 2,
+    "files_needed": 4,
+    "missing": [
+     "proto/events/v1/events.proto",
+     "dispatch/internal/assign/assign.go"
+    ],
+    "owners_found": 2,
+    "owners_needed": 3,
+    "conventions_found": 2,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 12.268
+   },
+   {
+    "task": "H02",
+    "source": "agents-md",
+    "budget": 8000,
+    "tokens": 64,
+    "files_found": 0,
+    "files_needed": 4,
+    "missing": [
+     "notifications/internal/consumer/rider_assigned.go",
+     "proto/events/v1/events.proto",
+     "dispatch/internal/assign/assign.go",
+     "proto/riders/v1/riders.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 1,
+    "ms": 0
+   },
+   {
+    "task": "H02",
+    "source": "grep-repo",
+    "budget": 8000,
+    "tokens": 539,
+    "files_found": 1,
+    "files_needed": 4,
+    "missing": [
+     "proto/events/v1/events.proto",
+     "dispatch/internal/assign/assign.go",
+     "proto/riders/v1/riders.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 1,
+    "ms": 0.319
+   },
+   {
+    "task": "H02",
+    "source": "grep-fleet",
+    "budget": 8000,
+    "tokens": 7992,
+    "files_found": 1,
+    "files_needed": 4,
+    "missing": [
+     "proto/events/v1/events.proto",
+     "dispatch/internal/assign/assign.go",
+     "proto/riders/v1/riders.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 1,
+    "ms": 69.337
+   },
+   {
+    "task": "H02",
+    "source": "fleet-code-context",
+    "budget": 8000,
+    "tokens": 1728,
+    "files_found": 2,
+    "files_needed": 4,
+    "missing": [
+     "proto/events/v1/events.proto",
+     "dispatch/internal/assign/assign.go"
+    ],
+    "owners_found": 2,
+    "owners_needed": 3,
+    "conventions_found": 2,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 7.598
+   },
+   {
+    "task": "H03",
+    "source": "agents-md",
+    "budget": 2000,
+    "tokens": 56,
+    "files_found": 0,
+    "files_needed": 2,
+    "missing": [
+     "pricing/internal/quote/quote.go",
+     "platform-go/money/money.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 1,
+    "conventions_found": 0,
+    "conventions_needed": 1,
+    "stale_as_fact": 1,
+    "ms": 0
+   },
+   {
+    "task": "H03",
+    "source": "grep-repo",
+    "budget": 2000,
+    "tokens": 237,
+    "files_found": 1,
+    "files_needed": 2,
+    "missing": [
+     "platform-go/money/money.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 1,
+    "conventions_found": 0,
+    "conventions_needed": 1,
+    "stale_as_fact": 1,
+    "ms": 0.195
+   },
+   {
+    "task": "H03",
+    "source": "grep-fleet",
+    "budget": 2000,
+    "tokens": 1979,
+    "files_found": 1,
+    "files_needed": 2,
+    "missing": [
+     "pricing/internal/quote/quote.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 1,
+    "conventions_found": 0,
+    "conventions_needed": 1,
+    "stale_as_fact": 1,
+    "ms": 44.569
+   },
+   {
+    "task": "H03",
+    "source": "fleet-code-context",
+    "budget": 2000,
+    "tokens": 1213,
+    "files_found": 2,
+    "files_needed": 2,
+    "owners_found": 1,
+    "owners_needed": 1,
+    "conventions_found": 1,
+    "conventions_needed": 1,
+    "stale_as_fact": 0,
+    "ms": 9.309
+   },
+   {
+    "task": "H03",
+    "source": "agents-md",
+    "budget": 4000,
+    "tokens": 56,
+    "files_found": 0,
+    "files_needed": 2,
+    "missing": [
+     "pricing/internal/quote/quote.go",
+     "platform-go/money/money.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 1,
+    "conventions_found": 0,
+    "conventions_needed": 1,
+    "stale_as_fact": 1,
+    "ms": 0
+   },
+   {
+    "task": "H03",
+    "source": "grep-repo",
+    "budget": 4000,
+    "tokens": 237,
+    "files_found": 1,
+    "files_needed": 2,
+    "missing": [
+     "platform-go/money/money.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 1,
+    "conventions_found": 0,
+    "conventions_needed": 1,
+    "stale_as_fact": 1,
+    "ms": 0.143
+   },
+   {
+    "task": "H03",
+    "source": "grep-fleet",
+    "budget": 4000,
+    "tokens": 3991,
+    "files_found": 1,
+    "files_needed": 2,
+    "missing": [
+     "pricing/internal/quote/quote.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 1,
+    "conventions_found": 0,
+    "conventions_needed": 1,
+    "stale_as_fact": 1,
+    "ms": 45.221
+   },
+   {
+    "task": "H03",
+    "source": "fleet-code-context",
+    "budget": 4000,
+    "tokens": 1213,
+    "files_found": 2,
+    "files_needed": 2,
+    "owners_found": 1,
+    "owners_needed": 1,
+    "conventions_found": 1,
+    "conventions_needed": 1,
+    "stale_as_fact": 0,
+    "ms": 6.416
+   },
+   {
+    "task": "H03",
+    "source": "agents-md",
+    "budget": 8000,
+    "tokens": 56,
+    "files_found": 0,
+    "files_needed": 2,
+    "missing": [
+     "pricing/internal/quote/quote.go",
+     "platform-go/money/money.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 1,
+    "conventions_found": 0,
+    "conventions_needed": 1,
+    "stale_as_fact": 1,
+    "ms": 0
+   },
+   {
+    "task": "H03",
+    "source": "grep-repo",
+    "budget": 8000,
+    "tokens": 237,
+    "files_found": 1,
+    "files_needed": 2,
+    "missing": [
+     "platform-go/money/money.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 1,
+    "conventions_found": 0,
+    "conventions_needed": 1,
+    "stale_as_fact": 1,
+    "ms": 0.154
+   },
+   {
+    "task": "H03",
+    "source": "grep-fleet",
+    "budget": 8000,
+    "tokens": 7987,
+    "files_found": 1,
+    "files_needed": 2,
+    "missing": [
+     "pricing/internal/quote/quote.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 1,
+    "conventions_found": 0,
+    "conventions_needed": 1,
+    "stale_as_fact": 1,
+    "ms": 56.195
+   },
+   {
+    "task": "H03",
+    "source": "fleet-code-context",
+    "budget": 8000,
+    "tokens": 1213,
+    "files_found": 2,
+    "files_needed": 2,
+    "owners_found": 1,
+    "owners_needed": 1,
+    "conventions_found": 1,
+    "conventions_needed": 1,
+    "stale_as_fact": 0,
+    "ms": 9.595
+   },
+   {
+    "task": "H04",
+    "source": "agents-md",
+    "budget": 2000,
+    "tokens": 87,
+    "files_found": 0,
+    "files_needed": 3,
+    "missing": [
+     "proto/orders/v1/orders.proto",
+     "orders/internal/server/server.go",
+     "orders/internal/store/store.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 2,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 4,
+    "ms": 0
+   },
+   {
+    "task": "H04",
+    "source": "grep-repo",
+    "budget": 2000,
+    "tokens": 1241,
+    "files_found": 2,
+    "files_needed": 3,
+    "missing": [
+     "proto/orders/v1/orders.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 2,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 4,
+    "ms": 0.304
+   },
+   {
+    "task": "H04",
+    "source": "grep-fleet",
+    "budget": 2000,
+    "tokens": 1973,
+    "files_found": 0,
+    "files_needed": 3,
+    "missing": [
+     "proto/orders/v1/orders.proto",
+     "orders/internal/server/server.go",
+     "orders/internal/store/store.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 2,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 4,
+    "ms": 42.71
+   },
+   {
+    "task": "H04",
+    "source": "fleet-code-context",
+    "budget": 2000,
+    "tokens": 1980,
+    "files_found": 0,
+    "files_needed": 3,
+    "missing": [
+     "proto/orders/v1/orders.proto",
+     "orders/internal/server/server.go",
+     "orders/internal/store/store.go"
+    ],
+    "owners_found": 1,
+    "owners_needed": 2,
+    "conventions_found": 2,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 11.918
+   },
+   {
+    "task": "H04",
+    "source": "agents-md",
+    "budget": 4000,
+    "tokens": 87,
+    "files_found": 0,
+    "files_needed": 3,
+    "missing": [
+     "proto/orders/v1/orders.proto",
+     "orders/internal/server/server.go",
+     "orders/internal/store/store.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 2,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 4,
+    "ms": 0.001
+   },
+   {
+    "task": "H04",
+    "source": "grep-repo",
+    "budget": 4000,
+    "tokens": 1241,
+    "files_found": 2,
+    "files_needed": 3,
+    "missing": [
+     "proto/orders/v1/orders.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 2,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 4,
+    "ms": 0.322
+   },
+   {
+    "task": "H04",
+    "source": "grep-fleet",
+    "budget": 4000,
+    "tokens": 3994,
+    "files_found": 0,
+    "files_needed": 3,
+    "missing": [
+     "proto/orders/v1/orders.proto",
+     "orders/internal/server/server.go",
+     "orders/internal/store/store.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 2,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 4,
+    "ms": 62.116
+   },
+   {
+    "task": "H04",
+    "source": "fleet-code-context",
+    "budget": 4000,
+    "tokens": 3949,
+    "files_found": 1,
+    "files_needed": 3,
+    "missing": [
+     "proto/orders/v1/orders.proto",
+     "orders/internal/server/server.go"
+    ],
+    "owners_found": 1,
+    "owners_needed": 2,
+    "conventions_found": 2,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 13.509
+   },
+   {
+    "task": "H04",
+    "source": "agents-md",
+    "budget": 8000,
+    "tokens": 87,
+    "files_found": 0,
+    "files_needed": 3,
+    "missing": [
+     "proto/orders/v1/orders.proto",
+     "orders/internal/server/server.go",
+     "orders/internal/store/store.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 2,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 4,
+    "ms": 0
+   },
+   {
+    "task": "H04",
+    "source": "grep-repo",
+    "budget": 8000,
+    "tokens": 1241,
+    "files_found": 2,
+    "files_needed": 3,
+    "missing": [
+     "proto/orders/v1/orders.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 2,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 4,
+    "ms": 0.292
+   },
+   {
+    "task": "H04",
+    "source": "grep-fleet",
+    "budget": 8000,
+    "tokens": 7983,
+    "files_found": 0,
+    "files_needed": 3,
+    "missing": [
+     "proto/orders/v1/orders.proto",
+     "orders/internal/server/server.go",
+     "orders/internal/store/store.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 2,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 4,
+    "ms": 68.252
+   },
+   {
+    "task": "H04",
+    "source": "fleet-code-context",
+    "budget": 8000,
+    "tokens": 6165,
+    "files_found": 1,
+    "files_needed": 3,
+    "missing": [
+     "proto/orders/v1/orders.proto",
+     "orders/internal/server/server.go"
+    ],
+    "owners_found": 1,
+    "owners_needed": 2,
+    "conventions_found": 2,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 10.846
+   },
+   {
+    "task": "H05",
+    "source": "agents-md",
+    "budget": 2000,
+    "tokens": 74,
+    "files_found": 0,
+    "files_needed": 3,
+    "missing": [
+     "restaurants/internal/consumer/order_placed.go",
+     "platform-go/money/money.go",
+     "proto/events/v1/events.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 1,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 0
+   },
+   {
+    "task": "H05",
+    "source": "grep-repo",
+    "budget": 2000,
+    "tokens": 277,
+    "files_found": 1,
+    "files_needed": 3,
+    "missing": [
+     "platform-go/money/money.go",
+     "proto/events/v1/events.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 1,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 0.204
+   },
+   {
+    "task": "H05",
+    "source": "grep-fleet",
+    "budget": 2000,
+    "tokens": 1998,
+    "files_found": 3,
+    "files_needed": 3,
+    "owners_found": 0,
+    "owners_needed": 1,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 39.837
+   },
+   {
+    "task": "H05",
+    "source": "fleet-code-context",
+    "budget": 2000,
+    "tokens": 1982,
+    "files_found": 2,
+    "files_needed": 3,
+    "missing": [
+     "platform-go/money/money.go"
+    ],
+    "owners_found": 1,
+    "owners_needed": 1,
+    "conventions_found": 2,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 19.314
+   },
+   {
+    "task": "H05",
+    "source": "agents-md",
+    "budget": 4000,
+    "tokens": 74,
+    "files_found": 0,
+    "files_needed": 3,
+    "missing": [
+     "restaurants/internal/consumer/order_placed.go",
+     "platform-go/money/money.go",
+     "proto/events/v1/events.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 1,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 0
+   },
+   {
+    "task": "H05",
+    "source": "grep-repo",
+    "budget": 4000,
+    "tokens": 277,
+    "files_found": 1,
+    "files_needed": 3,
+    "missing": [
+     "platform-go/money/money.go",
+     "proto/events/v1/events.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 1,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 0.223
+   },
+   {
+    "task": "H05",
+    "source": "grep-fleet",
+    "budget": 4000,
+    "tokens": 3998,
+    "files_found": 3,
+    "files_needed": 3,
+    "owners_found": 0,
+    "owners_needed": 1,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 44.731
+   },
+   {
+    "task": "H05",
+    "source": "fleet-code-context",
+    "budget": 4000,
+    "tokens": 2673,
+    "files_found": 2,
+    "files_needed": 3,
+    "missing": [
+     "platform-go/money/money.go"
+    ],
+    "owners_found": 1,
+    "owners_needed": 1,
+    "conventions_found": 2,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 11.515
+   },
+   {
+    "task": "H05",
+    "source": "agents-md",
+    "budget": 8000,
+    "tokens": 74,
+    "files_found": 0,
+    "files_needed": 3,
+    "missing": [
+     "restaurants/internal/consumer/order_placed.go",
+     "platform-go/money/money.go",
+     "proto/events/v1/events.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 1,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 0
+   },
+   {
+    "task": "H05",
+    "source": "grep-repo",
+    "budget": 8000,
+    "tokens": 277,
+    "files_found": 1,
+    "files_needed": 3,
+    "missing": [
+     "platform-go/money/money.go",
+     "proto/events/v1/events.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 1,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 0.267
+   },
+   {
+    "task": "H05",
+    "source": "grep-fleet",
+    "budget": 8000,
+    "tokens": 7990,
+    "files_found": 3,
+    "files_needed": 3,
+    "owners_found": 0,
+    "owners_needed": 1,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 64.089
+   },
+   {
+    "task": "H05",
+    "source": "fleet-code-context",
+    "budget": 8000,
+    "tokens": 2673,
+    "files_found": 2,
+    "files_needed": 3,
+    "missing": [
+     "platform-go/money/money.go"
+    ],
+    "owners_found": 1,
+    "owners_needed": 1,
+    "conventions_found": 2,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 13.634
+   },
+   {
+    "task": "H06",
+    "source": "agents-md",
+    "budget": 2000,
+    "tokens": 76,
+    "files_found": 0,
+    "files_needed": 4,
+    "missing": [
+     "proto/payments/v1/payments.proto",
+     "payments/internal/server/server.go",
+     "orders/internal/server/server.go",
+     "payments/internal/consumer/order_cancelled.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 1,
+    "conventions_needed": 3,
+    "stale_as_fact": 0,
+    "ms": 0
+   },
+   {
+    "task": "H06",
+    "source": "grep-repo",
+    "budget": 2000,
+    "tokens": 743,
+    "files_found": 2,
+    "files_needed": 4,
+    "missing": [
+     "proto/payments/v1/payments.proto",
+     "orders/internal/server/server.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 1,
+    "conventions_needed": 3,
+    "stale_as_fact": 0,
+    "ms": 0.256
+   },
+   {
+    "task": "H06",
+    "source": "grep-fleet",
+    "budget": 2000,
+    "tokens": 1997,
+    "files_found": 0,
+    "files_needed": 4,
+    "missing": [
+     "proto/payments/v1/payments.proto",
+     "payments/internal/server/server.go",
+     "orders/internal/server/server.go",
+     "payments/internal/consumer/order_cancelled.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 1,
+    "conventions_needed": 3,
+    "stale_as_fact": 0,
+    "ms": 56.96
+   },
+   {
+    "task": "H06",
+    "source": "fleet-code-context",
+    "budget": 2000,
+    "tokens": 1978,
+    "files_found": 2,
+    "files_needed": 4,
+    "missing": [
+     "proto/payments/v1/payments.proto",
+     "payments/internal/server/server.go"
+    ],
+    "owners_found": 3,
+    "owners_needed": 3,
+    "conventions_found": 3,
+    "conventions_needed": 3,
+    "stale_as_fact": 0,
+    "ms": 10.606
+   },
+   {
+    "task": "H06",
+    "source": "agents-md",
+    "budget": 4000,
+    "tokens": 76,
+    "files_found": 0,
+    "files_needed": 4,
+    "missing": [
+     "proto/payments/v1/payments.proto",
+     "payments/internal/server/server.go",
+     "orders/internal/server/server.go",
+     "payments/internal/consumer/order_cancelled.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 1,
+    "conventions_needed": 3,
+    "stale_as_fact": 0,
+    "ms": 0
+   },
+   {
+    "task": "H06",
+    "source": "grep-repo",
+    "budget": 4000,
+    "tokens": 743,
+    "files_found": 2,
+    "files_needed": 4,
+    "missing": [
+     "proto/payments/v1/payments.proto",
+     "orders/internal/server/server.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 1,
+    "conventions_needed": 3,
+    "stale_as_fact": 0,
+    "ms": 0.23
+   },
+   {
+    "task": "H06",
+    "source": "grep-fleet",
+    "budget": 4000,
+    "tokens": 3985,
+    "files_found": 0,
+    "files_needed": 4,
+    "missing": [
+     "proto/payments/v1/payments.proto",
+     "payments/internal/server/server.go",
+     "orders/internal/server/server.go",
+     "payments/internal/consumer/order_cancelled.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 1,
+    "conventions_needed": 3,
+    "stale_as_fact": 0,
+    "ms": 44.753
+   },
+   {
+    "task": "H06",
+    "source": "fleet-code-context",
+    "budget": 4000,
+    "tokens": 3993,
+    "files_found": 2,
+    "files_needed": 4,
+    "missing": [
+     "proto/payments/v1/payments.proto",
+     "payments/internal/server/server.go"
+    ],
+    "owners_found": 3,
+    "owners_needed": 3,
+    "conventions_found": 3,
+    "conventions_needed": 3,
+    "stale_as_fact": 0,
+    "ms": 14.201
+   },
+   {
+    "task": "H06",
+    "source": "agents-md",
+    "budget": 8000,
+    "tokens": 76,
+    "files_found": 0,
+    "files_needed": 4,
+    "missing": [
+     "proto/payments/v1/payments.proto",
+     "payments/internal/server/server.go",
+     "orders/internal/server/server.go",
+     "payments/internal/consumer/order_cancelled.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 1,
+    "conventions_needed": 3,
+    "stale_as_fact": 0,
+    "ms": 0
+   },
+   {
+    "task": "H06",
+    "source": "grep-repo",
+    "budget": 8000,
+    "tokens": 743,
+    "files_found": 2,
+    "files_needed": 4,
+    "missing": [
+     "proto/payments/v1/payments.proto",
+     "orders/internal/server/server.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 1,
+    "conventions_needed": 3,
+    "stale_as_fact": 0,
+    "ms": 0.452
+   },
+   {
+    "task": "H06",
+    "source": "grep-fleet",
+    "budget": 8000,
+    "tokens": 7983,
+    "files_found": 0,
+    "files_needed": 4,
+    "missing": [
+     "proto/payments/v1/payments.proto",
+     "payments/internal/server/server.go",
+     "orders/internal/server/server.go",
+     "payments/internal/consumer/order_cancelled.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 1,
+    "conventions_needed": 3,
+    "stale_as_fact": 0,
+    "ms": 73.173
+   },
+   {
+    "task": "H06",
+    "source": "fleet-code-context",
+    "budget": 8000,
+    "tokens": 7998,
+    "files_found": 2,
+    "files_needed": 4,
+    "missing": [
+     "proto/payments/v1/payments.proto",
+     "payments/internal/server/server.go"
+    ],
+    "owners_found": 3,
+    "owners_needed": 3,
+    "conventions_found": 3,
+    "conventions_needed": 3,
+    "stale_as_fact": 0,
+    "ms": 9.792
+   },
+   {
+    "task": "H07",
+    "source": "agents-md",
+    "budget": 2000,
+    "tokens": 87,
+    "files_found": 0,
+    "files_needed": 2,
+    "missing": [
+     "orders/internal/server/server.go",
+     "platform-go/log/log.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 1,
+    "conventions_found": 0,
+    "conventions_needed": 1,
+    "stale_as_fact": 4,
+    "ms": 0
+   },
+   {
+    "task": "H07",
+    "source": "grep-repo",
+    "budget": 2000,
+    "tokens": 1285,
+    "files_found": 1,
+    "files_needed": 2,
+    "missing": [
+     "platform-go/log/log.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 1,
+    "conventions_found": 0,
+    "conventions_needed": 1,
+    "stale_as_fact": 4,
+    "ms": 0.249
+   },
+   {
+    "task": "H07",
+    "source": "grep-fleet",
+    "budget": 2000,
+    "tokens": 1993,
+    "files_found": 1,
+    "files_needed": 2,
+    "missing": [
+     "orders/internal/server/server.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 1,
+    "conventions_found": 0,
+    "conventions_needed": 1,
+    "stale_as_fact": 4,
+    "ms": 51.797
+   },
+   {
+    "task": "H07",
+    "source": "fleet-code-context",
+    "budget": 2000,
+    "tokens": 2000,
+    "files_found": 2,
+    "files_needed": 2,
+    "owners_found": 1,
+    "owners_needed": 1,
+    "conventions_found": 1,
+    "conventions_needed": 1,
+    "stale_as_fact": 0,
+    "ms": 12.314
+   },
+   {
+    "task": "H07",
+    "source": "agents-md",
+    "budget": 4000,
+    "tokens": 87,
+    "files_found": 0,
+    "files_needed": 2,
+    "missing": [
+     "orders/internal/server/server.go",
+     "platform-go/log/log.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 1,
+    "conventions_found": 0,
+    "conventions_needed": 1,
+    "stale_as_fact": 4,
+    "ms": 0.001
+   },
+   {
+    "task": "H07",
+    "source": "grep-repo",
+    "budget": 4000,
+    "tokens": 1285,
+    "files_found": 1,
+    "files_needed": 2,
+    "missing": [
+     "platform-go/log/log.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 1,
+    "conventions_found": 0,
+    "conventions_needed": 1,
+    "stale_as_fact": 4,
+    "ms": 0.35
+   },
+   {
+    "task": "H07",
+    "source": "grep-fleet",
+    "budget": 4000,
+    "tokens": 3976,
+    "files_found": 1,
+    "files_needed": 2,
+    "missing": [
+     "orders/internal/server/server.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 1,
+    "conventions_found": 0,
+    "conventions_needed": 1,
+    "stale_as_fact": 4,
+    "ms": 60.119
+   },
+   {
+    "task": "H07",
+    "source": "fleet-code-context",
+    "budget": 4000,
+    "tokens": 3973,
+    "files_found": 2,
+    "files_needed": 2,
+    "owners_found": 1,
+    "owners_needed": 1,
+    "conventions_found": 1,
+    "conventions_needed": 1,
+    "stale_as_fact": 0,
+    "ms": 19.195
+   },
+   {
+    "task": "H07",
+    "source": "agents-md",
+    "budget": 8000,
+    "tokens": 87,
+    "files_found": 0,
+    "files_needed": 2,
+    "missing": [
+     "orders/internal/server/server.go",
+     "platform-go/log/log.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 1,
+    "conventions_found": 0,
+    "conventions_needed": 1,
+    "stale_as_fact": 4,
+    "ms": 0
+   },
+   {
+    "task": "H07",
+    "source": "grep-repo",
+    "budget": 8000,
+    "tokens": 1285,
+    "files_found": 1,
+    "files_needed": 2,
+    "missing": [
+     "platform-go/log/log.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 1,
+    "conventions_found": 0,
+    "conventions_needed": 1,
+    "stale_as_fact": 4,
+    "ms": 0.421
+   },
+   {
+    "task": "H07",
+    "source": "grep-fleet",
+    "budget": 8000,
+    "tokens": 7994,
+    "files_found": 1,
+    "files_needed": 2,
+    "missing": [
+     "orders/internal/server/server.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 1,
+    "conventions_found": 0,
+    "conventions_needed": 1,
+    "stale_as_fact": 4,
+    "ms": 73.225
+   },
+   {
+    "task": "H07",
+    "source": "fleet-code-context",
+    "budget": 8000,
+    "tokens": 5689,
+    "files_found": 2,
+    "files_needed": 2,
+    "owners_found": 1,
+    "owners_needed": 1,
+    "conventions_found": 1,
+    "conventions_needed": 1,
+    "stale_as_fact": 0,
+    "ms": 16.974
+   },
+   {
+    "task": "H08",
+    "source": "agents-md",
+    "budget": 2000,
+    "tokens": 87,
+    "files_found": 0,
+    "files_needed": 3,
+    "missing": [
+     "orders/internal/server/track.go",
+     "dispatch/internal/assign/assign.go",
+     "proto/dispatch/v1/dispatch.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 2,
+    "conventions_found": 0,
+    "conventions_needed": 0,
+    "stale_as_fact": 4,
+    "ms": 0.001
+   },
+   {
+    "task": "H08",
+    "source": "grep-repo",
+    "budget": 2000,
+    "tokens": 1285,
+    "files_found": 1,
+    "files_needed": 3,
+    "missing": [
+     "dispatch/internal/assign/assign.go",
+     "proto/dispatch/v1/dispatch.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 2,
+    "conventions_found": 0,
+    "conventions_needed": 0,
+    "stale_as_fact": 4,
+    "ms": 0.35
+   },
+   {
+    "task": "H08",
+    "source": "grep-fleet",
+    "budget": 2000,
+    "tokens": 1996,
+    "files_found": 2,
+    "files_needed": 3,
+    "missing": [
+     "proto/dispatch/v1/dispatch.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 2,
+    "conventions_found": 0,
+    "conventions_needed": 0,
+    "stale_as_fact": 4,
+    "ms": 60.7
+   },
+   {
+    "task": "H08",
+    "source": "fleet-code-context",
+    "budget": 2000,
+    "tokens": 1819,
+    "files_found": 2,
+    "files_needed": 3,
+    "missing": [
+     "proto/dispatch/v1/dispatch.proto"
+    ],
+    "owners_found": 2,
+    "owners_needed": 2,
+    "conventions_found": 0,
+    "conventions_needed": 0,
+    "stale_as_fact": 0,
+    "ms": 11.798
+   },
+   {
+    "task": "H08",
+    "source": "agents-md",
+    "budget": 4000,
+    "tokens": 87,
+    "files_found": 0,
+    "files_needed": 3,
+    "missing": [
+     "orders/internal/server/track.go",
+     "dispatch/internal/assign/assign.go",
+     "proto/dispatch/v1/dispatch.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 2,
+    "conventions_found": 0,
+    "conventions_needed": 0,
+    "stale_as_fact": 4,
+    "ms": 0
+   },
+   {
+    "task": "H08",
+    "source": "grep-repo",
+    "budget": 4000,
+    "tokens": 1285,
+    "files_found": 1,
+    "files_needed": 3,
+    "missing": [
+     "dispatch/internal/assign/assign.go",
+     "proto/dispatch/v1/dispatch.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 2,
+    "conventions_found": 0,
+    "conventions_needed": 0,
+    "stale_as_fact": 4,
+    "ms": 0.651
+   },
+   {
+    "task": "H08",
+    "source": "grep-fleet",
+    "budget": 4000,
+    "tokens": 4000,
+    "files_found": 2,
+    "files_needed": 3,
+    "missing": [
+     "proto/dispatch/v1/dispatch.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 2,
+    "conventions_found": 0,
+    "conventions_needed": 0,
+    "stale_as_fact": 4,
+    "ms": 63.532
+   },
+   {
+    "task": "H08",
+    "source": "fleet-code-context",
+    "budget": 4000,
+    "tokens": 1819,
+    "files_found": 2,
+    "files_needed": 3,
+    "missing": [
+     "proto/dispatch/v1/dispatch.proto"
+    ],
+    "owners_found": 2,
+    "owners_needed": 2,
+    "conventions_found": 0,
+    "conventions_needed": 0,
+    "stale_as_fact": 0,
+    "ms": 11.937
+   },
+   {
+    "task": "H08",
+    "source": "agents-md",
+    "budget": 8000,
+    "tokens": 87,
+    "files_found": 0,
+    "files_needed": 3,
+    "missing": [
+     "orders/internal/server/track.go",
+     "dispatch/internal/assign/assign.go",
+     "proto/dispatch/v1/dispatch.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 2,
+    "conventions_found": 0,
+    "conventions_needed": 0,
+    "stale_as_fact": 4,
+    "ms": 0
+   },
+   {
+    "task": "H08",
+    "source": "grep-repo",
+    "budget": 8000,
+    "tokens": 1285,
+    "files_found": 1,
+    "files_needed": 3,
+    "missing": [
+     "dispatch/internal/assign/assign.go",
+     "proto/dispatch/v1/dispatch.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 2,
+    "conventions_found": 0,
+    "conventions_needed": 0,
+    "stale_as_fact": 4,
+    "ms": 0.429
+   },
+   {
+    "task": "H08",
+    "source": "grep-fleet",
+    "budget": 8000,
+    "tokens": 7978,
+    "files_found": 2,
+    "files_needed": 3,
+    "missing": [
+     "proto/dispatch/v1/dispatch.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 2,
+    "conventions_found": 0,
+    "conventions_needed": 0,
+    "stale_as_fact": 4,
+    "ms": 93.924
+   },
+   {
+    "task": "H08",
+    "source": "fleet-code-context",
+    "budget": 8000,
+    "tokens": 1819,
+    "files_found": 2,
+    "files_needed": 3,
+    "missing": [
+     "proto/dispatch/v1/dispatch.proto"
+    ],
+    "owners_found": 2,
+    "owners_needed": 2,
+    "conventions_found": 0,
+    "conventions_needed": 0,
+    "stale_as_fact": 0,
+    "ms": 10.561
+   },
+   {
+    "task": "H09",
+    "source": "agents-md",
+    "budget": 2000,
+    "tokens": 76,
+    "files_found": 0,
+    "files_needed": 4,
+    "missing": [
+     "proto/payments/v1/payments.proto",
+     "payments/internal/server/server.go",
+     "orders/internal/server/server.go",
+     "proto/orders/v1/orders.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 0
+   },
+   {
+    "task": "H09",
+    "source": "grep-repo",
+    "budget": 2000,
+    "tokens": 788,
+    "files_found": 1,
+    "files_needed": 4,
+    "missing": [
+     "proto/payments/v1/payments.proto",
+     "orders/internal/server/server.go",
+     "proto/orders/v1/orders.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 0.239
+   },
+   {
+    "task": "H09",
+    "source": "grep-fleet",
+    "budget": 2000,
+    "tokens": 1980,
+    "files_found": 0,
+    "files_needed": 4,
+    "missing": [
+     "proto/payments/v1/payments.proto",
+     "payments/internal/server/server.go",
+     "orders/internal/server/server.go",
+     "proto/orders/v1/orders.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 41.694
+   },
+   {
+    "task": "H09",
+    "source": "fleet-code-context",
+    "budget": 2000,
+    "tokens": 172,
+    "files_found": 0,
+    "files_needed": 4,
+    "missing": [
+     "proto/payments/v1/payments.proto",
+     "payments/internal/server/server.go",
+     "orders/internal/server/server.go",
+     "proto/orders/v1/orders.proto"
+    ],
+    "owners_found": 1,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 3.048
+   },
+   {
+    "task": "H09",
+    "source": "agents-md",
+    "budget": 4000,
+    "tokens": 76,
+    "files_found": 0,
+    "files_needed": 4,
+    "missing": [
+     "proto/payments/v1/payments.proto",
+     "payments/internal/server/server.go",
+     "orders/internal/server/server.go",
+     "proto/orders/v1/orders.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 0
+   },
+   {
+    "task": "H09",
+    "source": "grep-repo",
+    "budget": 4000,
+    "tokens": 788,
+    "files_found": 1,
+    "files_needed": 4,
+    "missing": [
+     "proto/payments/v1/payments.proto",
+     "orders/internal/server/server.go",
+     "proto/orders/v1/orders.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 0.232
+   },
+   {
+    "task": "H09",
+    "source": "grep-fleet",
+    "budget": 4000,
+    "tokens": 3971,
+    "files_found": 0,
+    "files_needed": 4,
+    "missing": [
+     "proto/payments/v1/payments.proto",
+     "payments/internal/server/server.go",
+     "orders/internal/server/server.go",
+     "proto/orders/v1/orders.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 48.202
+   },
+   {
+    "task": "H09",
+    "source": "fleet-code-context",
+    "budget": 4000,
+    "tokens": 172,
+    "files_found": 0,
+    "files_needed": 4,
+    "missing": [
+     "proto/payments/v1/payments.proto",
+     "payments/internal/server/server.go",
+     "orders/internal/server/server.go",
+     "proto/orders/v1/orders.proto"
+    ],
+    "owners_found": 1,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 3.125
+   },
+   {
+    "task": "H09",
+    "source": "agents-md",
+    "budget": 8000,
+    "tokens": 76,
+    "files_found": 0,
+    "files_needed": 4,
+    "missing": [
+     "proto/payments/v1/payments.proto",
+     "payments/internal/server/server.go",
+     "orders/internal/server/server.go",
+     "proto/orders/v1/orders.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 0.001
+   },
+   {
+    "task": "H09",
+    "source": "grep-repo",
+    "budget": 8000,
+    "tokens": 788,
+    "files_found": 1,
+    "files_needed": 4,
+    "missing": [
+     "proto/payments/v1/payments.proto",
+     "orders/internal/server/server.go",
+     "proto/orders/v1/orders.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 0.233
+   },
+   {
+    "task": "H09",
+    "source": "grep-fleet",
+    "budget": 8000,
+    "tokens": 7995,
+    "files_found": 0,
+    "files_needed": 4,
+    "missing": [
+     "proto/payments/v1/payments.proto",
+     "payments/internal/server/server.go",
+     "orders/internal/server/server.go",
+     "proto/orders/v1/orders.proto"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 63.812
+   },
+   {
+    "task": "H09",
+    "source": "fleet-code-context",
+    "budget": 8000,
+    "tokens": 172,
+    "files_found": 0,
+    "files_needed": 4,
+    "missing": [
+     "proto/payments/v1/payments.proto",
+     "payments/internal/server/server.go",
+     "orders/internal/server/server.go",
+     "proto/orders/v1/orders.proto"
+    ],
+    "owners_found": 1,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 6.902
+   },
+   {
+    "task": "H10",
+    "source": "agents-md",
+    "budget": 2000,
+    "tokens": 100,
+    "files_found": 0,
+    "files_needed": 3,
+    "missing": [
+     "dispatch/internal/assign/assign.go",
+     "proto/riders/v1/riders.proto",
+     "riders/internal/server/server.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 1,
+    "ms": 0.001
+   },
+   {
+    "task": "H10",
+    "source": "grep-repo",
+    "budget": 2000,
+    "tokens": 1051,
+    "files_found": 1,
+    "files_needed": 3,
+    "missing": [
+     "proto/riders/v1/riders.proto",
+     "riders/internal/server/server.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 1,
+    "ms": 1.726
+   },
+   {
+    "task": "H10",
+    "source": "grep-fleet",
+    "budget": 2000,
+    "tokens": 1987,
+    "files_found": 1,
+    "files_needed": 3,
+    "missing": [
+     "proto/riders/v1/riders.proto",
+     "riders/internal/server/server.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 1,
+    "ms": 48.008
+   },
+   {
+    "task": "H10",
+    "source": "fleet-code-context",
+    "budget": 2000,
+    "tokens": 1781,
+    "files_found": 1,
+    "files_needed": 3,
+    "missing": [
+     "proto/riders/v1/riders.proto",
+     "riders/internal/server/server.go"
+    ],
+    "owners_found": 3,
+    "owners_needed": 3,
+    "conventions_found": 2,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 9.786
+   },
+   {
+    "task": "H10",
+    "source": "agents-md",
+    "budget": 4000,
+    "tokens": 100,
+    "files_found": 0,
+    "files_needed": 3,
+    "missing": [
+     "dispatch/internal/assign/assign.go",
+     "proto/riders/v1/riders.proto",
+     "riders/internal/server/server.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 1,
+    "ms": 0
+   },
+   {
+    "task": "H10",
+    "source": "grep-repo",
+    "budget": 4000,
+    "tokens": 1051,
+    "files_found": 1,
+    "files_needed": 3,
+    "missing": [
+     "proto/riders/v1/riders.proto",
+     "riders/internal/server/server.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 1,
+    "ms": 0.388
+   },
+   {
+    "task": "H10",
+    "source": "grep-fleet",
+    "budget": 4000,
+    "tokens": 3961,
+    "files_found": 1,
+    "files_needed": 3,
+    "missing": [
+     "proto/riders/v1/riders.proto",
+     "riders/internal/server/server.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 1,
+    "ms": 43.487
+   },
+   {
+    "task": "H10",
+    "source": "fleet-code-context",
+    "budget": 4000,
+    "tokens": 1781,
+    "files_found": 1,
+    "files_needed": 3,
+    "missing": [
+     "proto/riders/v1/riders.proto",
+     "riders/internal/server/server.go"
+    ],
+    "owners_found": 3,
+    "owners_needed": 3,
+    "conventions_found": 2,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 10.046
+   },
+   {
+    "task": "H10",
+    "source": "agents-md",
+    "budget": 8000,
+    "tokens": 100,
+    "files_found": 0,
+    "files_needed": 3,
+    "missing": [
+     "dispatch/internal/assign/assign.go",
+     "proto/riders/v1/riders.proto",
+     "riders/internal/server/server.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 1,
+    "ms": 0
+   },
+   {
+    "task": "H10",
+    "source": "grep-repo",
+    "budget": 8000,
+    "tokens": 1051,
+    "files_found": 1,
+    "files_needed": 3,
+    "missing": [
+     "proto/riders/v1/riders.proto",
+     "riders/internal/server/server.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 1,
+    "ms": 0.359
+   },
+   {
+    "task": "H10",
+    "source": "grep-fleet",
+    "budget": 8000,
+    "tokens": 7968,
+    "files_found": 1,
+    "files_needed": 3,
+    "missing": [
+     "proto/riders/v1/riders.proto",
+     "riders/internal/server/server.go"
+    ],
+    "owners_found": 0,
+    "owners_needed": 3,
+    "conventions_found": 0,
+    "conventions_needed": 2,
+    "stale_as_fact": 1,
+    "ms": 60.858
+   },
+   {
+    "task": "H10",
+    "source": "fleet-code-context",
+    "budget": 8000,
+    "tokens": 1781,
+    "files_found": 1,
+    "files_needed": 3,
+    "missing": [
+     "proto/riders/v1/riders.proto",
+     "riders/internal/server/server.go"
+    ],
+    "owners_found": 3,
+    "owners_needed": 3,
+    "conventions_found": 2,
+    "conventions_needed": 2,
+    "stale_as_fact": 0,
+    "ms": 7.904
+   }
+  ],
+  "drift": {
+   "claims": 941,
+   "checked": 938,
+   "flagged": 7,
+   "planted": 7,
+   "caught": 7
+  }
+ }
+]

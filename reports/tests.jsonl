@@ -1,0 +1,104 @@
+{"Time":"2026-11-10T11:03:59.083324922+01:00","Action":"start","Package":"github.com/manojrevenkar12-web/fleet-code-context/cmd/fcc"}
+{"Time":"2026-11-10T11:03:59.083424807+01:00","Action":"output","Package":"github.com/manojrevenkar12-web/fleet-code-context/cmd/fcc","Output":"?   \tgithub.com/manojrevenkar12-web/fleet-code-context/cmd/fcc\t[no test files]\n"}
+{"Time":"2026-11-10T11:03:59.083434068+01:00","Action":"skip","Package":"github.com/manojrevenkar12-web/fleet-code-context/cmd/fcc","Elapsed":0}
+{"Time":"2026-11-10T11:03:59.083484118+01:00","Action":"start","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/baseline"}
+{"Time":"2026-11-10T11:03:59.083514358+01:00","Action":"output","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/baseline","Output":"?   \tgithub.com/manojrevenkar12-web/fleet-code-context/internal/baseline\t[no test files]\n"}
+{"Time":"2026-11-10T11:03:59.083524465+01:00","Action":"skip","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/baseline","Elapsed":0}
+{"Time":"2026-11-10T11:03:59.121243709+01:00","Action":"start","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/drift"}
+{"Time":"2026-11-10T11:03:59.121268968+01:00","Action":"run","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/drift","Test":"TestFleetClaims"}
+{"Time":"2026-11-10T11:03:59.121272817+01:00","Action":"output","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/drift","Test":"TestFleetClaims","Output":"=== RUN   TestFleetClaims\n"}
+{"Time":"2026-11-10T11:03:59.121282446+01:00","Action":"output","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/drift","Test":"TestFleetClaims","Output":"--- PASS: TestFleetClaims (0.01s)\n"}
+{"Time":"2026-11-10T11:03:59.12128662+01:00","Action":"pass","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/drift","Test":"TestFleetClaims","Elapsed":0.01}
+{"Time":"2026-11-10T11:03:59.121295029+01:00","Action":"run","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/drift","Test":"TestSymbolResolution"}
+{"Time":"2026-11-10T11:03:59.121297639+01:00","Action":"output","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/drift","Test":"TestSymbolResolution","Output":"=== RUN   TestSymbolResolution\n"}
+{"Time":"2026-11-10T11:03:59.121301862+01:00","Action":"output","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/drift","Test":"TestSymbolResolution","Output":"--- PASS: TestSymbolResolution (0.01s)\n"}
+{"Time":"2026-11-10T11:03:59.121304995+01:00","Action":"pass","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/drift","Test":"TestSymbolResolution","Elapsed":0.01}
+{"Time":"2026-11-10T11:03:59.121308514+01:00","Action":"run","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/drift","Test":"TestUnits"}
+{"Time":"2026-11-10T11:03:59.121311812+01:00","Action":"output","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/drift","Test":"TestUnits","Output":"=== RUN   TestUnits\n"}
+{"Time":"2026-11-10T11:03:59.121315621+01:00","Action":"output","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/drift","Test":"TestUnits","Output":"--- PASS: TestUnits (0.01s)\n"}
+{"Time":"2026-11-10T11:03:59.121319002+01:00","Action":"pass","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/drift","Test":"TestUnits","Elapsed":0.01}
+{"Time":"2026-11-10T11:03:59.121322189+01:00","Action":"output","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/drift","Output":"PASS\n"}
+{"Time":"2026-11-10T11:03:59.121325104+01:00","Action":"output","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/drift","Output":"ok  \tgithub.com/manojrevenkar12-web/fleet-code-context/internal/drift\t(cached)\n"}
+{"Time":"2026-11-10T11:03:59.121330761+01:00","Action":"pass","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/drift","Elapsed":0}
+{"Time":"2026-11-10T11:03:59.135332553+01:00","Action":"start","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/eval"}
+{"Time":"2026-11-10T11:03:59.13537294+01:00","Action":"run","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/eval","Test":"TestServingCodeNeverReadsTruth"}
+{"Time":"2026-11-10T11:03:59.135378003+01:00","Action":"output","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/eval","Test":"TestServingCodeNeverReadsTruth","Output":"=== RUN   TestServingCodeNeverReadsTruth\n"}
+{"Time":"2026-11-10T11:03:59.135386673+01:00","Action":"output","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/eval","Test":"TestServingCodeNeverReadsTruth","Output":"--- PASS: TestServingCodeNeverReadsTruth (0.00s)\n"}
+{"Time":"2026-11-10T11:03:59.135391518+01:00","Action":"pass","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/eval","Test":"TestServingCodeNeverReadsTruth","Elapsed":0}
+{"Time":"2026-11-10T11:03:59.13539749+01:00","Action":"run","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/eval","Test":"TestHeldoutLock"}
+{"Time":"2026-11-10T11:03:59.135400259+01:00","Action":"output","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/eval","Test":"TestHeldoutLock","Output":"=== RUN   TestHeldoutLock\n"}
+{"Time":"2026-11-10T11:03:59.135405371+01:00","Action":"output","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/eval","Test":"TestHeldoutLock","Output":"--- PASS: TestHeldoutLock (0.00s)\n"}
+{"Time":"2026-11-10T11:03:59.13540914+01:00","Action":"pass","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/eval","Test":"TestHeldoutLock","Elapsed":0}
+{"Time":"2026-11-10T11:03:59.135412409+01:00","Action":"output","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/eval","Output":"PASS\n"}
+{"Time":"2026-11-10T11:03:59.135416355+01:00","Action":"output","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/eval","Output":"ok  \tgithub.com/manojrevenkar12-web/fleet-code-context/internal/eval\t(cached)\n"}
+{"Time":"2026-11-10T11:03:59.135421561+01:00","Action":"pass","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/eval","Elapsed":0}
+{"Time":"2026-11-10T11:03:59.184880656+01:00","Action":"start","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/index"}
+{"Time":"2026-11-10T11:03:59.185346458+01:00","Action":"run","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/index","Test":"TestReposAndOwners"}
+{"Time":"2026-11-10T11:03:59.185356859+01:00","Action":"output","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/index","Test":"TestReposAndOwners","Output":"=== RUN   TestReposAndOwners\n"}
+{"Time":"2026-11-10T11:03:59.18538182+01:00","Action":"output","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/index","Test":"TestReposAndOwners","Output":"--- PASS: TestReposAndOwners (0.01s)\n"}
+{"Time":"2026-11-10T11:03:59.185386003+01:00","Action":"pass","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/index","Test":"TestReposAndOwners","Elapsed":0.01}
+{"Time":"2026-11-10T11:03:59.185393046+01:00","Action":"run","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/index","Test":"TestEventEdgesCrossRepos"}
+{"Time":"2026-11-10T11:03:59.185422024+01:00","Action":"output","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/index","Test":"TestEventEdgesCrossRepos","Output":"=== RUN   TestEventEdgesCrossRepos\n"}
+{"Time":"2026-11-10T11:03:59.185430206+01:00","Action":"output","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/index","Test":"TestEventEdgesCrossRepos","Output":"--- PASS: TestEventEdgesCrossRepos (0.01s)\n"}
+{"Time":"2026-11-10T11:03:59.185437155+01:00","Action":"pass","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/index","Test":"TestEventEdgesCrossRepos","Elapsed":0.01}
+{"Time":"2026-11-10T11:03:59.185441223+01:00","Action":"run","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/index","Test":"TestRPCImplementersAndCallers"}
+{"Time":"2026-11-10T11:03:59.185453668+01:00","Action":"output","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/index","Test":"TestRPCImplementersAndCallers","Output":"=== RUN   TestRPCImplementersAndCallers\n"}
+{"Time":"2026-11-10T11:03:59.185458005+01:00","Action":"output","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/index","Test":"TestRPCImplementersAndCallers","Output":"--- PASS: TestRPCImplementersAndCallers (0.02s)\n"}
+{"Time":"2026-11-10T11:03:59.185462468+01:00","Action":"pass","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/index","Test":"TestRPCImplementersAndCallers","Elapsed":0.02}
+{"Time":"2026-11-10T11:03:59.185466403+01:00","Action":"run","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/index","Test":"TestFieldAndLibraryRefs"}
+{"Time":"2026-11-10T11:03:59.185469462+01:00","Action":"output","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/index","Test":"TestFieldAndLibraryRefs","Output":"=== RUN   TestFieldAndLibraryRefs\n"}
+{"Time":"2026-11-10T11:03:59.18547312+01:00","Action":"output","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/index","Test":"TestFieldAndLibraryRefs","Output":"--- PASS: TestFieldAndLibraryRefs (0.01s)\n"}
+{"Time":"2026-11-10T11:03:59.18547665+01:00","Action":"pass","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/index","Test":"TestFieldAndLibraryRefs","Elapsed":0.01}
+{"Time":"2026-11-10T11:03:59.185479964+01:00","Action":"run","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/index","Test":"TestIncrementalRebuild"}
+{"Time":"2026-11-10T11:03:59.185482631+01:00","Action":"output","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/index","Test":"TestIncrementalRebuild","Output":"=== RUN   TestIncrementalRebuild\n"}
+{"Time":"2026-11-10T11:03:59.185486699+01:00","Action":"output","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/index","Test":"TestIncrementalRebuild","Output":"--- PASS: TestIncrementalRebuild (0.05s)\n"}
+{"Time":"2026-11-10T11:03:59.185495973+01:00","Action":"pass","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/index","Test":"TestIncrementalRebuild","Elapsed":0.05}
+{"Time":"2026-11-10T11:03:59.185499711+01:00","Action":"run","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/index","Test":"TestProtoParser"}
+{"Time":"2026-11-10T11:03:59.185502744+01:00","Action":"output","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/index","Test":"TestProtoParser","Output":"=== RUN   TestProtoParser\n"}
+{"Time":"2026-11-10T11:03:59.18550673+01:00","Action":"output","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/index","Test":"TestProtoParser","Output":"--- PASS: TestProtoParser (0.00s)\n"}
+{"Time":"2026-11-10T11:03:59.185509731+01:00","Action":"pass","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/index","Test":"TestProtoParser","Elapsed":0}
+{"Time":"2026-11-10T11:03:59.185513774+01:00","Action":"output","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/index","Output":"PASS\n"}
+{"Time":"2026-11-10T11:03:59.185517302+01:00","Action":"output","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/index","Output":"ok  \tgithub.com/manojrevenkar12-web/fleet-code-context/internal/index\t(cached)\n"}
+{"Time":"2026-11-10T11:03:59.185522698+01:00","Action":"pass","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/index","Elapsed":0.001}
+{"Time":"2026-11-10T11:03:59.195836402+01:00","Action":"start","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/mcp"}
+{"Time":"2026-11-10T11:03:59.19589375+01:00","Action":"run","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/mcp","Test":"TestHandshakeAndList"}
+{"Time":"2026-11-10T11:03:59.195898671+01:00","Action":"output","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/mcp","Test":"TestHandshakeAndList","Output":"=== RUN   TestHandshakeAndList\n"}
+{"Time":"2026-11-10T11:03:59.195956009+01:00","Action":"output","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/mcp","Test":"TestHandshakeAndList","Output":"--- PASS: TestHandshakeAndList (0.02s)\n"}
+{"Time":"2026-11-10T11:03:59.19596094+01:00","Action":"pass","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/mcp","Test":"TestHandshakeAndList","Elapsed":0.02}
+{"Time":"2026-11-10T11:03:59.195968777+01:00","Action":"run","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/mcp","Test":"TestContextPackTool"}
+{"Time":"2026-11-10T11:03:59.195971491+01:00","Action":"output","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/mcp","Test":"TestContextPackTool","Output":"=== RUN   TestContextPackTool\n"}
+{"Time":"2026-11-10T11:03:59.19597545+01:00","Action":"output","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/mcp","Test":"TestContextPackTool","Output":"--- PASS: TestContextPackTool (0.01s)\n"}
+{"Time":"2026-11-10T11:03:59.195978795+01:00","Action":"pass","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/mcp","Test":"TestContextPackTool","Elapsed":0.01}
+{"Time":"2026-11-10T11:03:59.195981931+01:00","Action":"run","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/mcp","Test":"TestWhoUsesAndCards"}
+{"Time":"2026-11-10T11:03:59.195984999+01:00","Action":"output","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/mcp","Test":"TestWhoUsesAndCards","Output":"=== RUN   TestWhoUsesAndCards\n"}
+{"Time":"2026-11-10T11:03:59.195988282+01:00","Action":"output","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/mcp","Test":"TestWhoUsesAndCards","Output":"--- PASS: TestWhoUsesAndCards (0.01s)\n"}
+{"Time":"2026-11-10T11:03:59.195991396+01:00","Action":"pass","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/mcp","Test":"TestWhoUsesAndCards","Elapsed":0.01}
+{"Time":"2026-11-10T11:03:59.195994702+01:00","Action":"output","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/mcp","Output":"PASS\n"}
+{"Time":"2026-11-10T11:03:59.195981641+01:00","Action":"start","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/pack"}
+{"Time":"2026-11-10T11:03:59.196028048+01:00","Action":"output","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/pack","Output":"?   \tgithub.com/manojrevenkar12-web/fleet-code-context/internal/pack\t[no test files]\n"}
+{"Time":"2026-11-10T11:03:59.196039478+01:00","Action":"skip","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/pack","Elapsed":0}
+{"Time":"2026-11-10T11:03:59.195998931+01:00","Action":"output","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/mcp","Output":"ok  \tgithub.com/manojrevenkar12-web/fleet-code-context/internal/mcp\t(cached)\n"}
+{"Time":"2026-11-10T11:03:59.19611185+01:00","Action":"pass","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/mcp","Elapsed":0}
+{"Time":"2026-11-10T11:03:59.220540087+01:00","Action":"start","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/rank"}
+{"Time":"2026-11-10T11:03:59.220564133+01:00","Action":"run","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/rank","Test":"TestConfigMatchesDefaults"}
+{"Time":"2026-11-10T11:03:59.220568098+01:00","Action":"output","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/rank","Test":"TestConfigMatchesDefaults","Output":"=== RUN   TestConfigMatchesDefaults\n"}
+{"Time":"2026-11-10T11:03:59.220578456+01:00","Action":"output","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/rank","Test":"TestConfigMatchesDefaults","Output":"--- PASS: TestConfigMatchesDefaults (0.00s)\n"}
+{"Time":"2026-11-10T11:03:59.220582381+01:00","Action":"pass","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/rank","Test":"TestConfigMatchesDefaults","Elapsed":0}
+{"Time":"2026-11-10T11:03:59.220587806+01:00","Action":"output","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/rank","Output":"PASS\n"}
+{"Time":"2026-11-10T11:03:59.220596536+01:00","Action":"output","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/rank","Output":"ok  \tgithub.com/manojrevenkar12-web/fleet-code-context/internal/rank\t(cached)\n"}
+{"Time":"2026-11-10T11:03:59.220601123+01:00","Action":"pass","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/rank","Elapsed":0}
+{"Time":"2026-11-10T11:03:59.220734501+01:00","Action":"start","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/synth"}
+{"Time":"2026-11-10T11:03:59.22074343+01:00","Action":"output","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/synth","Output":"?   \tgithub.com/manojrevenkar12-web/fleet-code-context/internal/synth\t[no test files]\n"}
+{"Time":"2026-11-10T11:03:59.22074884+01:00","Action":"skip","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/synth","Elapsed":0}
+{"Time":"2026-11-10T11:03:59.234663253+01:00","Action":"start","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/words"}
+{"Time":"2026-11-10T11:03:59.234681643+01:00","Action":"run","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/words","Test":"TestSplit"}
+{"Time":"2026-11-10T11:03:59.234685505+01:00","Action":"output","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/words","Test":"TestSplit","Output":"=== RUN   TestSplit\n"}
+{"Time":"2026-11-10T11:03:59.234737848+01:00","Action":"output","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/words","Test":"TestSplit","Output":"--- PASS: TestSplit (0.00s)\n"}
+{"Time":"2026-11-10T11:03:59.234742115+01:00","Action":"pass","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/words","Test":"TestSplit","Elapsed":0}
+{"Time":"2026-11-10T11:03:59.234748036+01:00","Action":"run","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/words","Test":"TestTokens"}
+{"Time":"2026-11-10T11:03:59.234751461+01:00","Action":"output","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/words","Test":"TestTokens","Output":"=== RUN   TestTokens\n"}
+{"Time":"2026-11-10T11:03:59.234755289+01:00","Action":"output","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/words","Test":"TestTokens","Output":"--- PASS: TestTokens (0.00s)\n"}
+{"Time":"2026-11-10T11:03:59.234758525+01:00","Action":"pass","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/words","Test":"TestTokens","Elapsed":0}
+{"Time":"2026-11-10T11:03:59.23476176+01:00","Action":"output","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/words","Output":"PASS\n"}
+{"Time":"2026-11-10T11:03:59.234767192+01:00","Action":"output","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/words","Output":"ok  \tgithub.com/manojrevenkar12-web/fleet-code-context/internal/words\t(cached)\n"}
+{"Time":"2026-11-10T11:03:59.234771849+01:00","Action":"pass","Package":"github.com/manojrevenkar12-web/fleet-code-context/internal/words","Elapsed":0}
